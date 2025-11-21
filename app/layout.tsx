@@ -26,6 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="E-8CwF3hdBl_e-q_3xT2Uzx_qvsaE0UJHXxUbyBZcYQ" />
+      </head>
       <body className="antialiased">{children}</body>
     </html>
   );
