@@ -5,12 +5,12 @@ import path from 'path'
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://mommyslog.com'
 
-  // Scan blog directory for post folders
-  const blogDir = path.join(process.cwd(), 'app/blog')
-  const blogPosts = fs.readdirSync(blogDir, { withFileTypes: true })
-    .filter(item => item.isDirectory())
-    .map(folder => ({
-      url: `${baseUrl}/blog/${folder.name}`,
+  // Scan content/blog directory for markdown files
+  const blogDir = path.join(process.cwd(), 'content/blog')
+  const blogPosts = fs.readdirSync(blogDir)
+    .filter(file => file.endsWith('.md'))
+    .map(file => ({
+      url: `${baseUrl}/blog/${file.replace('.md', '')}`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
