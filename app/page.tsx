@@ -343,9 +343,9 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/privacy" className="text-gray-400 hover:text-white transition">
+                  <a href="https://lcantillo84.github.io/mom-baby-logger/privacy-policy.html" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
                     Privacy Policy
-                  </Link>
+                  </a>
                 </li>
                 <li>
                   <a href="mailto:lilianne.cantillo@gmail.com" className="text-gray-400 hover:text-white transition">

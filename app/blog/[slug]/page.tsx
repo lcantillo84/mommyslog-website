@@ -172,9 +172,9 @@ export default async function BlogPostPage({ params }: PageProps) {
               <Link href="/blog" className="text-gray-500 hover:text-mommy-rose text-sm transition">
                 Blog
               </Link>
-              <Link href="/privacy" className="text-gray-500 hover:text-mommy-rose text-sm transition">
+              <a href="https://lcantillo84.github.io/mom-baby-logger/privacy-policy.html" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-mommy-rose text-sm transition">
                 Privacy Policy
-              </Link>
+              </a>
             </div>
           </div>
         </div>
