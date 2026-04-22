@@ -18,13 +18,13 @@ export default function BlogPage() {
   const regularPosts = posts.filter((post) => !post.featured);
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-ml-cream">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-mommy-pink/30 via-white to-mommy-lavender/20">
+      <section className="bg-ml-cream border-b border-ml-teal/10">
         <div className="max-w-6xl mx-auto px-4 py-16 md:py-24">
           <Link
             href="/"
-            className="inline-flex items-center text-gray-600 hover:text-mommy-rose transition mb-8 text-sm font-medium"
+            className="inline-flex items-center text-ml-secondary hover:text-ml-teal transition mb-8 text-sm font-semibold"
           >
             <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -33,13 +33,12 @@ export default function BlogPage() {
           </Link>
 
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-ml-text mb-6 leading-tight">
               The Mommy's Log
-              <span className="block text-mommy-rose">Blog</span>
+              <span className="block text-ml-teal">Blog</span>
             </h1>
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <p className="text-xl text-ml-secondary leading-relaxed">
               Practical tips, honest advice, and helpful guides for your parenting journey.
-              Written by moms, for moms.
             </p>
           </div>
         </div>
@@ -49,30 +48,30 @@ export default function BlogPage() {
       {featuredPost && (
         <section className="max-w-6xl mx-auto px-4 -mt-8">
           <Link href={`/blog/${featuredPost.slug}`} className="block group">
-            <article className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+            <article className="bg-ml-card rounded-[20px] shadow-[0_8px_24px_rgba(0,0,0,0.09)] hover:shadow-[0_12px_32px_rgba(91,168,159,0.15)] transition-all duration-300 overflow-hidden border border-ml-teal/10">
               <div className="md:flex">
-                <div className="md:w-2/5 bg-gradient-to-br from-mommy-pink to-mommy-lavender p-8 md:p-12 flex items-center justify-center">
+                <div className="md:w-2/5 bg-ml-teal p-8 md:p-12 flex items-center justify-center">
                   <div className="text-center">
-                    <span className="inline-block bg-white/90 text-mommy-rose text-xs font-bold px-3 py-1 rounded-full mb-4">
+                    <span className="inline-block bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
                       FEATURED
                     </span>
                     <div className="text-6xl mb-4">📱</div>
-                    <span className="text-white/80 text-sm font-medium">{featuredPost.category}</span>
+                    <span className="text-white/80 text-sm font-semibold">{featuredPost.category}</span>
                   </div>
                 </div>
                 <div className="md:w-3/5 p-8 md:p-12">
-                  <div className="flex items-center gap-3 text-sm text-gray-500 mb-4">
+                  <div className="flex items-center gap-3 text-sm text-ml-secondary mb-4">
                     <time>{featuredPost.date}</time>
-                    <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
+                    <span className="w-1 h-1 bg-ml-secondary/40 rounded-full"></span>
                     <span>{featuredPost.readTime}</span>
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 group-hover:text-mommy-rose transition">
+                  <h2 className="text-2xl md:text-3xl font-bold text-ml-text mb-4 group-hover:text-ml-teal transition">
                     {featuredPost.title}
                   </h2>
-                  <p className="text-gray-600 leading-relaxed mb-6">
+                  <p className="text-ml-secondary leading-relaxed mb-6">
                     {featuredPost.description}
                   </p>
-                  <span className="inline-flex items-center text-mommy-rose font-semibold group-hover:gap-3 gap-2 transition-all">
+                  <span className="inline-flex items-center text-ml-teal font-bold group-hover:gap-3 gap-2 transition-all">
                     Read Article
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -88,38 +87,38 @@ export default function BlogPage() {
       {/* All Posts */}
       <section className="max-w-6xl mx-auto px-4 py-16 md:py-24">
         <div className="flex items-center justify-between mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+          <h2 className="text-2xl md:text-3xl font-bold text-ml-text">
             Latest Articles
           </h2>
-          <span className="text-gray-500 text-sm">
-            {posts.length} {posts.length === 1 ? 'article' : 'articles'}
+          <span className="text-ml-secondary text-sm font-semibold">
+            {posts.length} {posts.length === 1 ? "article" : "articles"}
           </span>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {regularPosts.map((post) => (
             <Link href={`/blog/${post.slug}`} key={post.slug} className="group">
-              <article className="h-full bg-white rounded-xl border border-gray-100 hover:border-mommy-pink hover:shadow-lg transition-all duration-300 overflow-hidden">
-                <div className="h-2 bg-gradient-to-r from-mommy-pink to-mommy-lavender"></div>
+              <article className="h-full bg-ml-card rounded-[20px] shadow-[0_4px_8px_rgba(0,0,0,0.09)] hover:shadow-[0_8px_16px_rgba(91,168,159,0.15)] border border-ml-teal/10 hover:border-ml-teal/30 transition-all duration-300 overflow-hidden">
+                <div className="h-1.5 bg-ml-teal"></div>
                 <div className="p-6">
                   {post.category && (
-                    <span className="inline-block text-xs font-semibold text-mommy-rose bg-mommy-pink/20 px-3 py-1 rounded-full mb-4">
+                    <span className="inline-block text-xs font-bold text-ml-teal bg-ml-teal/10 px-3 py-1 rounded-full mb-4">
                       {post.category}
                     </span>
                   )}
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-mommy-rose transition line-clamp-2">
+                  <h3 className="text-xl font-bold text-ml-text mb-3 group-hover:text-ml-teal transition line-clamp-2">
                     {post.title}
                   </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
+                  <p className="text-ml-secondary text-sm leading-relaxed mb-4 line-clamp-3">
                     {post.description}
                   </p>
-                  <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                    <div className="flex items-center gap-2 text-xs text-gray-500">
+                  <div className="flex items-center justify-between pt-4 border-t border-ml-teal/10">
+                    <div className="flex items-center gap-2 text-xs text-ml-secondary">
                       <time>{post.date}</time>
-                      <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
+                      <span className="w-1 h-1 bg-ml-secondary/40 rounded-full"></span>
                       <span>{post.readTime}</span>
                     </div>
-                    <svg className="w-5 h-5 text-gray-400 group-hover:text-mommy-rose group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-ml-secondary/40 group-hover:text-ml-teal group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </div>
@@ -131,20 +130,19 @@ export default function BlogPage() {
 
         {posts.length === 0 && (
           <div className="text-center py-16">
-            <p className="text-gray-500 text-lg">No articles yet. Check back soon!</p>
+            <p className="text-ml-secondary text-lg">No articles yet. Check back soon!</p>
           </div>
         )}
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-br from-gray-900 to-gray-800">
+      <section className="bg-ml-teal">
         <div className="max-w-4xl mx-auto px-4 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Track Your Baby's Journey
           </h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Mommy's Log makes it easy to track feedings and diapers.
-            100% free, no ads, and your data stays private.
+          <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
+            Free forever. No account. Data stays on your device.
           </p>
           <a
             href="https://apps.apple.com/us/app/mommys-log/id6755473620"
@@ -162,17 +160,17 @@ export default function BlogPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-50 border-t border-gray-100">
+      <footer className="bg-ml-cream border-t border-ml-teal/10">
         <div className="max-w-6xl mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-gray-500 text-sm">
+            <p className="text-ml-secondary text-sm">
               © {new Date().getFullYear()} Mommy's Log. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <Link href="/" className="text-gray-500 hover:text-mommy-rose text-sm transition">
+              <Link href="/" className="text-ml-secondary hover:text-ml-teal text-sm transition font-semibold">
                 Home
               </Link>
-              <a href="https://lcantillo84.github.io/mom-baby-logger/privacy-policy.html" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-mommy-rose text-sm transition">
+              <a href="https://lcantillo84.github.io/mom-baby-logger/privacy-policy.html" target="_blank" rel="noopener noreferrer" className="text-ml-secondary hover:text-ml-teal text-sm transition font-semibold">
                 Privacy Policy
               </a>
             </div>

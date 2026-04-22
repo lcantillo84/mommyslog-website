@@ -6,26 +6,26 @@ export default function Home() {
   const posts = getAllPosts().slice(0, 3);
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-ml-cream">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+      <nav className="sticky top-0 z-50 bg-ml-cream/80 backdrop-blur-md border-b border-ml-teal/10">
         <div className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-mommy-pink to-mommy-rose rounded-xl flex items-center justify-center">
+              <div className="w-10 h-10 bg-ml-teal rounded-xl flex items-center justify-center">
                 <span className="text-xl">👶</span>
               </div>
-              <span className="font-bold text-xl text-gray-900">Mommy's Log</span>
+              <span className="font-bold text-xl text-ml-text">Mommy's Log</span>
             </Link>
             <div className="flex items-center gap-8">
-              <Link href="/blog" className="text-gray-600 hover:text-mommy-rose transition font-medium">
+              <Link href="/blog" className="text-ml-secondary hover:text-ml-teal transition font-semibold">
                 Blog
               </Link>
               <a
                 href="https://apps.apple.com/us/app/mommys-log/id6755473620"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden sm:inline-flex items-center gap-2 bg-gray-900 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-gray-800 transition"
+                className="hidden sm:inline-flex items-center gap-2 bg-ml-teal text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:opacity-90 transition"
               >
                 Download Free
               </a>
@@ -35,25 +35,23 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-pink-50 via-white to-white">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-mommy-lavender/20 via-transparent to-transparent"></div>
-        <div className="relative px-4 py-20 md:py-32 max-w-6xl mx-auto">
+      <section className="bg-ml-cream px-4 pt-20 pb-16 md:pt-32 md:pb-24">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-2 bg-mommy-pink/30 text-mommy-rose px-4 py-2 rounded-full text-sm font-semibold mb-8">
-              <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-              100% Free • No Ads • Private
+            <div className="inline-flex items-center gap-2 bg-ml-teal/10 text-ml-teal px-4 py-2 rounded-full text-sm font-bold mb-8">
+              <span className="w-2 h-2 bg-ml-teal rounded-full animate-pulse"></span>
+              100% Free · No Ads · Private
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-              Track Your Baby's
-              <span className="block bg-gradient-to-r from-mommy-rose to-mommy-lavender bg-clip-text text-transparent">
-                Daily Journey
+            <h1 className="text-5xl md:text-7xl font-bold text-ml-text mb-6 leading-tight">
+              Baby tracking,
+              <span className="block text-ml-teal">
+                finally simple.
               </span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-              The simplest way to log feedings and diaper changes.
-              All data stays on your device—completely private.
+            <p className="text-xl md:text-2xl text-ml-secondary mb-10 max-w-2xl mx-auto leading-relaxed">
+              Log feedings and diapers in seconds. All data stays on your device.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -71,7 +69,7 @@ export default function Home() {
               </a>
               <Link
                 href="/blog"
-                className="inline-flex items-center gap-2 text-gray-700 hover:text-mommy-rose font-semibold transition"
+                className="inline-flex items-center gap-2 text-ml-secondary hover:text-ml-teal font-semibold transition"
               >
                 Read Our Blog
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -84,158 +82,201 @@ export default function Home() {
       </section>
 
       {/* Trust Badges */}
-      <section className="py-8 border-y border-gray-100 bg-gray-50/50">
+      <section className="py-8 border-y border-ml-teal/10 bg-ml-card">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-            <div className="flex items-center gap-2 text-gray-600">
-              <svg className="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span className="font-medium">Free Forever</span>
-            </div>
-            <div className="flex items-center gap-2 text-gray-600">
-              <svg className="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span className="font-medium">No Account Needed</span>
-            </div>
-            <div className="flex items-center gap-2 text-gray-600">
-              <svg className="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span className="font-medium">Works Offline</span>
-            </div>
-            <div className="flex items-center gap-2 text-gray-600">
-              <svg className="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span className="font-medium">Privacy First</span>
-            </div>
+            {[
+              "Free Forever",
+              "No Account Needed",
+              "Works Offline",
+              "Privacy First",
+            ].map((label) => (
+              <div key={label} className="flex items-center gap-2 text-ml-secondary">
+                <svg className="w-5 h-5 text-ml-teal" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className="font-semibold">{label}</span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="px-4 py-20 md:py-28">
+      <section className="px-4 py-20 md:py-28 bg-ml-cream">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-              Everything You Need,
-              <span className="text-mommy-rose"> Nothing You Don't</span>
+            <h2 className="text-3xl md:text-5xl font-bold text-ml-text mb-4">
+              Everything you need.
+              <span className="text-ml-teal"> Nothing you don't.</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Designed for tired parents who need quick, one-handed tracking at 3 AM.
+            <p className="text-xl text-ml-secondary max-w-2xl mx-auto">
+              Built for tired parents who need quick, one-handed logging at 3 AM.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
-            <div className="group p-8 rounded-2xl bg-gradient-to-b from-mommy-pink/10 to-transparent hover:from-mommy-pink/20 transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-mommy-pink to-mommy-rose rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <span className="text-3xl">🍼</span>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-ml-card rounded-[20px] p-8 shadow-[0_4px_8px_rgba(0,0,0,0.09)]">
+              <div className="w-14 h-14 bg-ml-blue rounded-[16px] flex items-center justify-center mb-5">
+                <span className="text-2xl">🍼</span>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Track Feedings</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Log breast, bottle, and formula feedings. Timer included. Knows which side is next.
+              <h3 className="text-lg font-bold mb-2 text-ml-text">Log Feedings</h3>
+              <p className="text-ml-secondary text-sm leading-relaxed">
+                Breast, bottle, or formula — tap and done. Built-in timer. Knows which side is next.
               </p>
             </div>
 
-            <div className="group p-8 rounded-2xl bg-gradient-to-b from-mommy-rose/10 to-transparent hover:from-mommy-rose/20 transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-mommy-rose to-mommy-lavender rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <span className="text-3xl">🧷</span>
+            <div className="bg-ml-card rounded-[20px] p-8 shadow-[0_4px_8px_rgba(0,0,0,0.09)]">
+              <div className="w-14 h-14 bg-ml-caramel/40 rounded-[16px] flex items-center justify-center mb-5">
+                <span className="text-2xl">🧷</span>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Log Diapers</h3>
-              <p className="text-gray-600 leading-relaxed">
-                One-tap diaper tracking. Wet, dirty, or both. Know your baby's patterns.
+              <h3 className="text-lg font-bold mb-2 text-ml-text">Track Diapers</h3>
+              <p className="text-ml-secondary text-sm leading-relaxed">
+                One tap to log wet, dirty, or both. Know your baby's patterns at a glance.
               </p>
             </div>
 
-            <div className="group p-8 rounded-2xl bg-gradient-to-b from-mommy-lavender/10 to-transparent hover:from-mommy-lavender/20 transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-mommy-lavender to-purple-300 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <span className="text-3xl">📊</span>
+            <div className="bg-ml-card rounded-[20px] p-8 shadow-[0_4px_8px_rgba(0,0,0,0.09)]">
+              <div className="w-14 h-14 bg-ml-sand/60 rounded-[16px] flex items-center justify-center mb-5">
+                <span className="text-2xl">📅</span>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Share with Doctor</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Export to CSV or text. Perfect for pediatrician visits. They'll be impressed.
+              <h3 className="text-lg font-bold mb-2 text-ml-text">Full History</h3>
+              <p className="text-ml-secondary text-sm leading-relaxed">
+                Review every feeding and diaper by day. Export to CSV for pediatrician visits.
               </p>
+            </div>
+
+            <div className="bg-ml-teal/10 rounded-[20px] p-8 shadow-[0_4px_8px_rgba(0,0,0,0.09)] border border-ml-teal/20">
+              <div className="w-14 h-14 bg-ml-teal rounded-[16px] flex items-center justify-center mb-5">
+                <span className="text-2xl">🔄</span>
+              </div>
+              <h3 className="text-lg font-bold mb-2 text-ml-text">Partner Sync</h3>
+              <p className="text-ml-secondary text-sm leading-relaxed">
+                Both parents see everything in real time. Powered by iCloud.
+              </p>
+              <span className="inline-block mt-3 text-xs font-bold text-ml-teal bg-ml-teal/10 px-3 py-1 rounded-full">
+                New · $2.99/mo
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Partner Sync Section */}
+      <section className="px-4 py-20 bg-ml-card">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-ml-cream rounded-[20px] shadow-[0_4px_8px_rgba(0,0,0,0.09)] overflow-hidden border border-ml-teal/15">
+            <div className="bg-ml-teal px-8 py-4 flex items-center gap-3">
+              <span className="text-white text-sm font-bold tracking-wide uppercase">New Feature</span>
+              <span className="bg-white/20 text-white text-xs font-semibold px-2 py-0.5 rounded-full">7-day free trial</span>
+            </div>
+            <div className="p-8 md:p-12">
+              <div className="md:flex items-center gap-12">
+                <div className="flex-1 mb-8 md:mb-0">
+                  <h2 className="text-2xl md:text-3xl font-bold text-ml-text mb-4">
+                    Partner & Nanny Sync
+                  </h2>
+                  <p className="text-ml-secondary text-lg leading-relaxed mb-6">
+                    Share your baby's log with a partner, co-parent, or nanny. Everything stays in sync automatically — powered by iCloud, no account needed.
+                  </p>
+                  <ul className="space-y-3">
+                    {[
+                      "Real-time updates across all devices",
+                      "Works over iCloud — completely private",
+                      "Both caregivers log and see the same data",
+                      "7-day free trial, then $2.99/month",
+                    ].map((item) => (
+                      <li key={item} className="flex items-center gap-3 text-ml-secondary">
+                        <svg className="w-5 h-5 text-ml-teal flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                        </svg>
+                        <span className="font-medium">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="flex flex-col items-center gap-4 text-center">
+                  <div className="w-28 h-28 bg-ml-teal/10 rounded-[28px] flex items-center justify-center border border-ml-teal/20">
+                    <span className="text-5xl">🔄</span>
+                  </div>
+                  <div>
+                    <p className="text-3xl font-bold text-ml-teal">$2.99</p>
+                    <p className="text-sm text-ml-secondary font-medium">per month</p>
+                    <p className="text-xs text-ml-teal font-semibold mt-1">Try free for 7 days</p>
+                  </div>
+                  <a
+                    href="https://apps.apple.com/us/app/mommys-log/id6755473620"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-ml-teal text-white font-bold px-8 py-3 rounded-xl hover:opacity-90 transition text-sm"
+                  >
+                    Get Started Free
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Screenshots Section */}
-      <section className="px-4 py-20 bg-gradient-to-b from-gray-50 to-white">
+      <section className="px-4 py-20 bg-ml-cream">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-              Beautiful & Simple
+            <h2 className="text-3xl md:text-5xl font-bold text-ml-text mb-4">
+              Clean. Simple. Calm.
             </h2>
-            <p className="text-xl text-gray-600">
-              Clean design that works when you're half asleep
+            <p className="text-xl text-ml-secondary">
+              Designed to work when you're half asleep.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="rounded-3xl overflow-hidden shadow-2xl border-8 border-gray-900 bg-gray-900 transform hover:scale-105 transition-transform duration-300">
-              <Image
-                src="/main-feedingpage.PNG"
-                alt="Mommy's Log - Main Feeding Page"
-                width={414}
-                height={896}
-                className="w-full h-auto"
-                priority
-              />
-            </div>
-            <div className="rounded-3xl overflow-hidden shadow-2xl border-8 border-gray-900 bg-gray-900 transform hover:scale-105 transition-transform duration-300 md:-mt-8">
-              <Image
-                src="/feeding.PNG"
-                alt="Mommy's Log - Feeding Tracker"
-                width={414}
-                height={896}
-                className="w-full h-auto"
-              />
-            </div>
-            <div className="rounded-3xl overflow-hidden shadow-2xl border-8 border-gray-900 bg-gray-900 transform hover:scale-105 transition-transform duration-300">
-              <Image
-                src="/History.PNG"
-                alt="Mommy's Log - History View"
-                width={414}
-                height={896}
-                className="w-full h-auto"
-              />
-            </div>
+            {[
+              { src: "/main-feedingpage.PNG", alt: "Mommy's Log - Main Feeding Page" },
+              { src: "/feeding.PNG", alt: "Mommy's Log - Feeding Tracker", offset: true },
+              { src: "/History.PNG", alt: "Mommy's Log - History View" },
+            ].map(({ src, alt, offset }) => (
+              <div
+                key={src}
+                className={`rounded-3xl overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.12)] border-8 border-ml-text bg-ml-text transform hover:scale-105 transition-transform duration-300${offset ? " md:-mt-8" : ""}`}
+              >
+                <Image
+                  src={src}
+                  alt={alt}
+                  width={414}
+                  height={896}
+                  className="w-full h-auto"
+                  priority={src.includes("main")}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Privacy Section */}
-      <section className="px-4 py-20">
+      <section className="px-4 py-20 bg-ml-card">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 rounded-3xl p-10 md:p-14">
+          <div className="bg-ml-teal/8 border border-ml-teal/20 rounded-[20px] p-10 md:p-14">
             <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="w-24 h-24 bg-gradient-to-br from-green-400 to-emerald-500 rounded-3xl flex items-center justify-center flex-shrink-0">
-                <span className="text-5xl">🔒</span>
+              <div className="w-20 h-20 bg-ml-teal rounded-[20px] flex items-center justify-center flex-shrink-0">
+                <span className="text-4xl">🔒</span>
               </div>
               <div className="text-center md:text-left">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                  Your Privacy is Sacred
+                <h2 className="text-2xl md:text-3xl font-bold text-ml-text mb-3">
+                  Your data stays yours. Always.
                 </h2>
-                <p className="text-lg text-gray-700 mb-6">
-                  In a world where every app wants your data, we chose different.
-                  All your baby's information stays on YOUR device. Always.
+                <p className="text-lg text-ml-secondary mb-6">
+                  No servers. No accounts. No data collection. Everything lives on your device.
                 </p>
-                <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-                  <span className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium text-gray-700 shadow-sm">
-                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                    No account required
-                  </span>
-                  <span className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium text-gray-700 shadow-sm">
-                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                    No data collection
-                  </span>
-                  <span className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium text-gray-700 shadow-sm">
-                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                    Works offline
-                  </span>
+                <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+                  {["No account required", "No data collection", "Works offline"].map((label) => (
+                    <span key={label} className="inline-flex items-center gap-2 bg-ml-cream px-4 py-2 rounded-full text-sm font-semibold text-ml-text shadow-sm">
+                      <span className="w-2 h-2 bg-ml-teal rounded-full"></span>
+                      {label}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
@@ -244,20 +285,20 @@ export default function Home() {
       </section>
 
       {/* Blog Preview Section */}
-      <section className="px-4 py-20 bg-gray-50">
+      <section className="px-4 py-20 bg-ml-cream">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+              <h2 className="text-3xl md:text-4xl font-bold text-ml-text mb-2">
                 From Our Blog
               </h2>
-              <p className="text-gray-600 text-lg">
+              <p className="text-ml-secondary text-lg">
                 Tips and guides for new parents
               </p>
             </div>
             <Link
               href="/blog"
-              className="inline-flex items-center gap-2 text-mommy-rose font-semibold hover:gap-3 transition-all mt-4 md:mt-0"
+              className="inline-flex items-center gap-2 text-ml-teal font-bold hover:gap-3 transition-all mt-4 md:mt-0"
             >
               View All Articles
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -266,24 +307,24 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6">
             {posts.map((post) => (
               <Link href={`/blog/${post.slug}`} key={post.slug} className="group">
-                <article className="h-full bg-white rounded-2xl border border-gray-100 hover:border-mommy-pink hover:shadow-xl transition-all duration-300 overflow-hidden">
-                  <div className="h-2 bg-gradient-to-r from-mommy-pink to-mommy-lavender"></div>
+                <article className="h-full bg-ml-card rounded-[20px] shadow-[0_4px_8px_rgba(0,0,0,0.09)] hover:shadow-[0_8px_16px_rgba(91,168,159,0.15)] border border-ml-teal/10 hover:border-ml-teal/30 transition-all duration-300 overflow-hidden">
+                  <div className="h-1.5 bg-ml-teal"></div>
                   <div className="p-6">
                     {post.category && (
-                      <span className="inline-block text-xs font-semibold text-mommy-rose bg-mommy-pink/20 px-3 py-1 rounded-full mb-4">
+                      <span className="inline-block text-xs font-bold text-ml-teal bg-ml-teal/10 px-3 py-1 rounded-full mb-4">
                         {post.category}
                       </span>
                     )}
-                    <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-mommy-rose transition line-clamp-2">
+                    <h3 className="text-lg font-bold text-ml-text mb-3 group-hover:text-ml-teal transition line-clamp-2">
                       {post.title}
                     </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed line-clamp-2">
+                    <p className="text-ml-secondary text-sm leading-relaxed line-clamp-2">
                       {post.description}
                     </p>
-                    <div className="flex items-center gap-2 mt-4 pt-4 border-t border-gray-100 text-xs text-gray-500">
+                    <div className="flex items-center gap-2 mt-4 pt-4 border-t border-ml-teal/10 text-xs text-ml-secondary">
                       <span>{post.readTime}</span>
                     </div>
                   </div>
@@ -295,13 +336,12 @@ export default function Home() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="px-4 py-20 md:py-28 bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800">
+      <section className="px-4 py-20 md:py-28 bg-ml-teal">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-            Start Tracking Today
+            Start tracking today.
           </h2>
-          <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-            Join thousands of parents who simplified their baby tracking.
+          <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
             Free forever. No credit card. No account needed.
           </p>
           <a
@@ -320,42 +360,42 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 border-t border-gray-800">
+      <footer className="bg-ml-text border-t border-white/5">
         <div className="max-w-6xl mx-auto px-4 py-12">
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div className="md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-mommy-pink to-mommy-rose rounded-xl flex items-center justify-center">
+                <div className="w-10 h-10 bg-ml-teal rounded-xl flex items-center justify-center">
                   <span className="text-xl">👶</span>
                 </div>
                 <span className="font-bold text-xl text-white">Mommy's Log</span>
               </div>
-              <p className="text-gray-400 max-w-sm">
+              <p className="text-white/50 max-w-sm text-sm leading-relaxed">
                 The simple, private way to track your baby's feedings and diapers. Built by parents, for parents.
               </p>
             </div>
             <div>
-              <h4 className="font-semibold text-white mb-4">Quick Links</h4>
+              <h4 className="font-bold text-white mb-4">Quick Links</h4>
               <ul className="space-y-3">
                 <li>
-                  <Link href="/blog" className="text-gray-400 hover:text-white transition">
+                  <Link href="/blog" className="text-white/50 hover:text-white transition text-sm">
                     Blog
                   </Link>
                 </li>
                 <li>
-                  <a href="https://lcantillo84.github.io/mom-baby-logger/privacy-policy.html" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
+                  <a href="https://lcantillo84.github.io/mom-baby-logger/privacy-policy.html" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-white transition text-sm">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:lilianne.cantillo@gmail.com" className="text-gray-400 hover:text-white transition">
+                  <a href="mailto:lilianne.cantillo@gmail.com" className="text-white/50 hover:text-white transition text-sm">
                     Support
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold text-white mb-4">Download</h4>
+              <h4 className="font-bold text-white mb-4">Download</h4>
               <a
                 href="https://apps.apple.com/us/app/mommys-log/id6755473620"
                 target="_blank"
@@ -370,7 +410,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+          <div className="pt-8 border-t border-white/10 text-center text-white/30 text-sm">
             © {new Date().getFullYear()} Mommy's Log. All rights reserved.
           </div>
         </div>

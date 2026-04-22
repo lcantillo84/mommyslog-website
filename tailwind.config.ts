@@ -9,9 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'mommy-pink': '#FAC2CC',
-        'mommy-rose': '#F2A6B8',
-        'mommy-lavender': '#D9D2F2',
+        'ml-teal': '#5BA89F',
+        'ml-cream': '#FFF9F4',
+        'ml-card': '#FFFCF9',
+        'ml-text': '#252220',
+        'ml-secondary': '#7A7470',
+        'ml-alert': '#C85A5A',
+        'ml-blue': '#B8D4E0',
+        'ml-sand': '#EED8B4',
+        'ml-caramel': '#C4A07A',
       },
     },
   },
