@@ -3,20 +3,44 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Mommy's Log - Baby Feeding & Diaper Tracker",
-  description: "Track your baby's feedings and diaper changes privately and simply. 100% free, no ads, all data stays on your device.",
-  keywords: "baby tracker, feeding log, diaper tracker, breastfeeding app, baby app, newborn tracker",
+  metadataBase: new URL("https://mommyslog.com"),
+  title: {
+    default: "Mommy's Log - Free Baby Feeding & Diaper Tracker App",
+    template: "%s | Mommy's Log",
+  },
+  description: "Free baby feeding tracker app for iPhone. Log breastfeeding, bottle feeding, and diaper changes in seconds. No ads, no account — all data stays on your device.",
+  keywords: [
+    "baby feeding tracker app",
+    "free baby tracker app",
+    "newborn feeding log",
+    "breastfeeding tracker",
+    "diaper tracker app",
+    "baby feeding schedule",
+    "baby tracker no subscription",
+    "infant feeding tracker",
+    "baby log app",
+    "newborn tracker app",
+    "breastfeeding log",
+    "baby feeding app iPhone",
+    "track baby feedings and diapers",
+    "free baby app no ads",
+  ],
   openGraph: {
-    title: "Mommy's Log - Baby Feeding & Diaper Tracker",
-    description: "Track your baby's feedings and diaper changes privately and simply. 100% free, no ads.",
+    title: "Mommy's Log - Free Baby Feeding & Diaper Tracker App",
+    description: "Free baby feeding tracker app for iPhone. Log breastfeeding, bottle, and diapers in seconds. No ads, no account — private and simple.",
     url: "https://mommyslog.com",
     siteName: "Mommy's Log",
     type: "website",
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mommy's Log - Baby Feeding & Diaper Tracker",
-    description: "Track your baby's feedings and diaper changes privately and simply. 100% free, no ads.",
+    title: "Mommy's Log - Free Baby Feeding & Diaper Tracker App",
+    description: "Free baby feeding tracker app for iPhone. No ads, no account — all data stays on your device.",
+    site: "@mommyslog",
+  },
+  alternates: {
+    canonical: "https://mommyslog.com",
   },
 };
 
