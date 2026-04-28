@@ -5,6 +5,7 @@ date: "2025-01-21"
 readTime: "10 min read"
 category: "App Reviews"
 featured: true
+image: "https://picsum.photos/seed/baby-app/1200/600"
 ---
 
 Are you a sleep-deprived new mom trying to remember when your baby last ate? You're not alone. Keeping track of feeding times, durations, and which breast you used can feel impossible when you're running on two hours of sleep.

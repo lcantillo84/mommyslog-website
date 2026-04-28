@@ -5,6 +5,7 @@ date: "2025-11-20"
 readTime: "8 min read"
 category: "Baby Care"
 featured: false
+image: "https://picsum.photos/seed/baby-diaper/1200/600"
 ---
 
 One of the most common questions new parents have is: "Is this diaper normal?" You're not alone—most of us spend more time analyzing baby poop than we ever imagined.

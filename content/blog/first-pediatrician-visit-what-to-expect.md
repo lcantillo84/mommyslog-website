@@ -5,6 +5,7 @@ date: "2025-11-18"
 readTime: "7 min read"
 category: "New Parents"
 featured: false
+image: "https://picsum.photos/seed/pediatrician/1200/600"
 ---
 
 Your baby's first pediatrician visit usually happens within 2-3 days of leaving the hospital. If you're feeling nervous, that's completely normal. Here's everything you need to know to walk in prepared and confident.

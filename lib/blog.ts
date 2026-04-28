@@ -12,6 +12,8 @@ export interface BlogPost {
   readTime: string;
   category?: string;
   featured?: boolean;
+  affiliate?: boolean;
+  image?: string;
   content: string;
 }
 
@@ -34,6 +36,8 @@ export function getAllPosts(): BlogPost[] {
         readTime: data.readTime,
         category: data.category,
         featured: data.featured || false,
+        affiliate: data.affiliate || false,
+        image: data.image || null,
         content,
       };
     })

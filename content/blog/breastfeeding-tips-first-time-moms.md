@@ -5,6 +5,7 @@ date: "2025-11-22"
 readTime: "12 min read"
 category: "Breastfeeding"
 featured: false
+image: "https://picsum.photos/seed/breastfeeding/1200/600"
 ---
 
 Breastfeeding is one of the most natural things in the world—and also one of the hardest to learn. If you're a first-time mom feeling overwhelmed, you're not alone. Most of us struggled in the beginning.

@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { getPostBySlug, getAllSlugs } from "@/lib/blog";
+import Script from "next/script";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -23,7 +24,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: post.title,
+    title: `${post.title} | Mommy's Log`,
     description: post.description,
     openGraph: {
       title: post.title,
@@ -31,6 +32,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: `https://mommyslog.com/blog/${slug}`,
       type: "article",
       publishedTime: post.date,
+      images: post.image ? [{ url: post.image }] : [],
     },
     twitter: {
       card: "summary_large_image",
@@ -48,75 +50,146 @@ export default async function BlogPostPage({ params }: PageProps) {
     notFound();
   }
 
-  return (
-    <main className="min-h-screen bg-white">
-      {/* Article Header */}
-      <header className="bg-gradient-to-br from-mommy-pink/20 via-white to-mommy-lavender/10">
-        <div className="max-w-3xl mx-auto px-4 py-12 md:py-20">
-          <Link
-            href="/blog"
-            className="inline-flex items-center text-gray-600 hover:text-mommy-rose transition mb-8 text-sm font-medium"
-          >
-            <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-            Back to Blog
-          </Link>
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.description,
+    datePublished: post.date,
+    dateModified: post.date,
+    image: post.image || undefined,
+    author: {
+      "@type": "Organization",
+      name: "Mommy's Log",
+      url: "https://mommyslog.com",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Mommy's Log",
+      url: "https://mommyslog.com",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://mommyslog.com/blog/${slug}`,
+    },
+  };
 
+  return (
+    <main className="min-h-screen bg-ml-cream">
+      <Script
+        id="article-jsonld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
+      {/* Nav */}
+      <nav className="sticky top-0 z-50 bg-ml-cream/80 backdrop-blur-md border-b border-ml-teal/10">
+        <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-2">
+            <div className="w-9 h-9 bg-ml-teal rounded-xl flex items-center justify-center">
+              <span className="text-lg">👶</span>
+            </div>
+            <span className="font-bold text-lg text-ml-text">Mommy&apos;s Log</span>
+          </Link>
+          <div className="flex items-center gap-6">
+            <Link href="/blog" className="text-ml-secondary hover:text-ml-teal transition text-sm font-semibold">
+              ← Blog
+            </Link>
+            <a
+              href="https://apps.apple.com/us/app/mommys-log/id6755473620"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:inline-flex items-center gap-2 bg-ml-teal text-white px-4 py-2 rounded-xl text-sm font-bold hover:opacity-90 transition"
+            >
+              Download Free
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      {/* Hero */}
+      <header className="bg-ml-cream border-b border-ml-teal/10">
+        <div className="max-w-3xl mx-auto px-6 py-12 md:py-20">
           {post.category && (
-            <span className="inline-block text-xs font-semibold text-mommy-rose bg-mommy-pink/30 px-3 py-1 rounded-full mb-6">
+            <span className="inline-block text-xs font-bold text-ml-teal bg-ml-teal/10 px-3 py-1 rounded-full mb-5">
               {post.category}
             </span>
           )}
-
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
+          <h1 className="text-3xl md:text-5xl font-bold text-ml-text leading-tight mb-5">
             {post.title}
           </h1>
-
-          <div className="flex flex-wrap items-center gap-4 text-gray-500">
-            <div className="flex items-center gap-2">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              <time>{post.date}</time>
-            </div>
-            <div className="flex items-center gap-2">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span>{post.readTime}</span>
-            </div>
+          <div className="flex flex-wrap items-center gap-3 text-ml-secondary text-sm">
+            <time>{post.date}</time>
+            <span className="w-1 h-1 bg-ml-secondary/40 rounded-full"></span>
+            <span>{post.readTime}</span>
+            {post.affiliate && (
+              <>
+                <span className="w-1 h-1 bg-ml-secondary/40 rounded-full"></span>
+                <span>Contains affiliate links</span>
+              </>
+            )}
           </div>
         </div>
       </header>
 
-      {/* Article Content */}
-      <article className="max-w-3xl mx-auto px-4 py-12 md:py-16">
-        <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-headings:font-bold prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:md:text-2xl prose-h3:mt-8 prose-h3:mb-4 prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-mommy-rose prose-a:no-underline hover:prose-a:underline prose-strong:text-gray-900 prose-ul:space-y-2 prose-ol:space-y-2 prose-li:text-gray-700 prose-blockquote:border-l-4 prose-blockquote:border-mommy-pink prose-blockquote:bg-mommy-pink/10 prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:rounded-r-xl prose-blockquote:not-italic prose-blockquote:text-gray-700">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
+      {/* Description pull-quote */}
+      <div className="max-w-3xl mx-auto px-6 py-8">
+        <p className="text-lg md:text-xl text-ml-secondary leading-relaxed border-l-4 border-ml-teal pl-5">
+          {post.description}
+        </p>
+      </div>
+
+      {/* Article */}
+      <article className="max-w-3xl mx-auto px-6 pb-16">
+        <div className="prose prose-lg max-w-none
+          prose-headings:font-bold prose-headings:text-ml-text
+          prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-12 prose-h2:mb-5 prose-h2:border-b prose-h2:border-ml-teal/15 prose-h2:pb-3
+          prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-h3:text-ml-teal
+          prose-p:text-ml-secondary prose-p:leading-relaxed prose-p:text-base
+          prose-a:text-ml-teal prose-a:font-semibold prose-a:no-underline hover:prose-a:underline
+          prose-strong:text-ml-text prose-strong:font-bold
+          prose-ul:space-y-1.5 prose-ol:space-y-1.5
+          prose-li:text-ml-secondary prose-li:text-base
+          prose-blockquote:border-l-4 prose-blockquote:border-ml-teal prose-blockquote:bg-ml-teal/8 prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:rounded-r-2xl prose-blockquote:not-italic prose-blockquote:text-ml-secondary
+          prose-table:text-sm prose-th:bg-ml-teal/10 prose-th:text-ml-text
+          prose-hr:border-ml-teal/15
+          prose-em:text-ml-secondary/70 prose-em:text-sm">
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            components={{
+              a: ({ href, children }) => (
+                <a href={href} target="_blank" rel="noopener noreferrer">
+                  {children}
+                </a>
+              ),
+            }}
+          >
+            {post.content}
+          </ReactMarkdown>
         </div>
       </article>
 
       {/* App CTA */}
-      <section className="max-w-3xl mx-auto px-4 pb-16">
-        <div className="bg-gradient-to-br from-mommy-pink/30 to-mommy-lavender/30 rounded-2xl p-8 md:p-12 text-center">
-          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            Track Your Baby's Journey
+      <section className="max-w-3xl mx-auto px-6 pb-16">
+        <div className="bg-ml-teal rounded-[24px] p-8 md:p-12 text-center">
+          <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-5">
+            <span className="text-3xl">👶</span>
+          </div>
+          <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
+            Track your baby for free
           </h3>
-          <p className="text-gray-700 mb-2 max-w-lg mx-auto">
-            Mommy's Log helps you track feedings, diapers, and more — all in one simple, private app.
+          <p className="text-white/80 mb-2 max-w-sm mx-auto">
+            Feedings, diapers, sleep — all in one place. No account needed.
           </p>
-          <p className="text-gray-600 mb-8 text-sm">
-            100% Free • No Ads • Privacy-First
-          </p>
+          <p className="text-white/60 text-sm mb-8">100% Free · No Ads · All data stays on your phone</p>
           <a
             href="https://apps.apple.com/us/app/mommys-log/id6755473620"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block hover:opacity-90 transition"
+            className="inline-block hover:opacity-90 transition transform hover:scale-105"
           >
             <img
-              src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1734912000"
+              src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83&releaseDate=1734912000"
               alt="Download on the App Store"
               className="h-14 md:h-16"
             />
@@ -124,57 +197,50 @@ export default async function BlogPostPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* Author / Disclaimer */}
-      <section className="border-t border-gray-100">
-        <div className="max-w-3xl mx-auto px-4 py-12">
-          <div className="flex items-start gap-4">
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-mommy-pink to-mommy-lavender flex items-center justify-center flex-shrink-0">
-              <span className="text-xl">👩‍👧</span>
-            </div>
-            <div>
-              <p className="font-semibold text-gray-900 mb-1">Written by Mommy's Log Team</p>
-              <p className="text-gray-600 text-sm">
-                We're moms and developers who created Mommy's Log to help other parents.
-                Our articles combine personal experience with research to give you practical, trustworthy advice.
-              </p>
-            </div>
+      {/* Author */}
+      <section className="max-w-3xl mx-auto px-6 pb-16">
+        <div className="flex items-start gap-4 bg-ml-card rounded-2xl p-6 border border-ml-teal/10">
+          <div className="w-12 h-12 rounded-full bg-ml-teal/15 flex items-center justify-center flex-shrink-0">
+            <span className="text-xl">👩‍👧</span>
+          </div>
+          <div>
+            <p className="font-bold text-ml-text mb-1">Written by Mommy&apos;s Log</p>
+            <p className="text-ml-secondary text-sm leading-relaxed">
+              We&apos;re moms who built an app and now share everything we wish someone had told us. Real talk, no fluff.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* More Articles */}
-      <section className="bg-gray-50 border-t border-gray-100">
-        <div className="max-w-3xl mx-auto px-4 py-12 text-center">
-          <h3 className="text-xl font-bold text-gray-900 mb-6">Read More Articles</h3>
-          <Link
-            href="/blog"
-            className="inline-flex items-center gap-2 text-mommy-rose font-semibold hover:gap-3 transition-all"
-          >
-            View All Articles
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      {/* More articles */}
+      <div className="border-t border-ml-teal/10 bg-ml-card">
+        <div className="max-w-3xl mx-auto px-6 py-10 flex items-center justify-between">
+          <Link href="/blog" className="inline-flex items-center gap-2 text-ml-teal font-bold hover:gap-3 transition-all">
+            <svg className="w-5 h-5 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
+            More articles
           </Link>
+          <a
+            href="https://apps.apple.com/us/app/mommys-log/id6755473620"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-bold text-ml-teal hover:opacity-80 transition"
+          >
+            Download the app →
+          </a>
         </div>
-      </section>
+      </div>
 
       {/* Footer */}
-      <footer className="bg-white border-t border-gray-100">
-        <div className="max-w-3xl mx-auto px-4 py-8">
+      <footer className="bg-ml-text">
+        <div className="max-w-6xl mx-auto px-6 py-10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-gray-500 text-sm">
-              © {new Date().getFullYear()} Mommy's Log. All rights reserved.
-            </p>
+            <p className="text-white/40 text-sm">© {new Date().getFullYear()} Mommy&apos;s Log. All rights reserved.</p>
             <div className="flex gap-6">
-              <Link href="/" className="text-gray-500 hover:text-mommy-rose text-sm transition">
-                Home
-              </Link>
-              <Link href="/blog" className="text-gray-500 hover:text-mommy-rose text-sm transition">
-                Blog
-              </Link>
-              <a href="https://lcantillo84.github.io/mom-baby-logger/privacy-policy.html" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-mommy-rose text-sm transition">
-                Privacy Policy
-              </a>
+              <Link href="/" className="text-white/40 hover:text-white text-sm transition">Home</Link>
+              <Link href="/blog" className="text-white/40 hover:text-white text-sm transition">Blog</Link>
+              <a href="https://lcantillo84.github.io/mom-baby-logger/privacy-policy.html" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white text-sm transition">Privacy</a>
             </div>
           </div>
         </div>
