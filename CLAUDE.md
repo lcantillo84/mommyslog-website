@@ -180,3 +180,6 @@ featured: true  # optional — marks as featured post on blog index
 affiliate: true  # optional — shows affiliate disclosure in header
 ---
 ```
+##very importan of the blog always add at the end the disclaimer
+
+*Disclaimer: This article is for informational purposes only and does not replace medical advice. If you have concerns about breastfeeding, please consult with your healthcare provider or a certified lactation consultant.*
