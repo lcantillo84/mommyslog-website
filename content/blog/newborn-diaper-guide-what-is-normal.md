@@ -6,6 +6,7 @@ readTime: "8 min read"
 category: "Baby Care"
 featured: false
 image: "https://picsum.photos/seed/baby-diaper/1200/600"
+keywords: ["newborn diaper guide", "how many diapers newborn per day", "normal newborn diapers", "newborn wet diapers per day", "newborn dirty diaper count", "newborn diaper output"]
 ---
 
 One of the most common questions new parents have is: "Is this diaper normal?" You're not alone—most of us spend more time analyzing baby poop than we ever imagined.

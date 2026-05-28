@@ -5,10 +5,15 @@ import { getAllPosts } from "@/lib/blog";
 export const metadata: Metadata = {
   title: "Blog | Mommy's Log - Baby Care Tips & Guides",
   description: "Expert advice on baby feeding, breastfeeding tips, and parenting guides for new moms. Helpful articles to make your parenting journey easier.",
+  alternates: {
+    canonical: "https://mommyslog.com/blog",
+  },
   openGraph: {
-    title: "Blog | Mommy's Log",
-    description: "Expert baby care tips and guides for new moms.",
+    title: "Blog | Mommy's Log - Baby Care Tips & Guides",
+    description: "Expert advice on baby feeding, breastfeeding tips, and parenting guides for new moms.",
     url: "https://mommyslog.com/blog",
+    type: "website",
+    images: [{ url: "https://mommyslog.com/og-image.png", width: 1200, height: 630, alt: "Mommy's Log Blog" }],
   },
 };
 

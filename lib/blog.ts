@@ -9,11 +9,13 @@ export interface BlogPost {
   title: string;
   description: string;
   date: string;
+  updated?: string;
   readTime: string;
   category?: string;
   featured?: boolean;
   affiliate?: boolean;
   image?: string;
+  keywords?: string[];
   content: string;
 }
 
@@ -33,11 +35,13 @@ export function getAllPosts(): BlogPost[] {
         title: data.title,
         description: data.description,
         date: data.date,
+        updated: data.updated || undefined,
         readTime: data.readTime,
         category: data.category,
         featured: data.featured || false,
         affiliate: data.affiliate || false,
         image: data.image || null,
+        keywords: data.keywords || undefined,
         content,
       };
     })
@@ -57,9 +61,13 @@ export function getPostBySlug(slug: string): BlogPost | null {
       title: data.title,
       description: data.description,
       date: data.date,
+      updated: data.updated || undefined,
       readTime: data.readTime,
       category: data.category,
       featured: data.featured || false,
+      affiliate: data.affiliate || false,
+      image: data.image || undefined,
+      keywords: data.keywords || undefined,
       content,
     };
   } catch {

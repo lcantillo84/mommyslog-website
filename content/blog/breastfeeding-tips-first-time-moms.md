@@ -6,6 +6,7 @@ readTime: "12 min read"
 category: "Breastfeeding"
 featured: false
 image: "https://picsum.photos/seed/breastfeeding/1200/600"
+keywords: ["breastfeeding tips first time mom", "how to breastfeed newborn", "breastfeeding advice new mom", "newborn breastfeeding help", "breastfeeding problems solutions", "breastfeeding tips beginner"]
 ---
 
 Breastfeeding is one of the most natural things in the world—and also one of the hardest to learn. If you're a first-time mom feeling overwhelmed, you're not alone. Most of us struggled in the beginning.

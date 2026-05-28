@@ -32,6 +32,7 @@ export const metadata: Metadata = {
     siteName: "Mommy's Log",
     type: "website",
     locale: "en_US",
+    images: [{ url: "https://mommyslog.com/og-image.png", width: 1200, height: 630, alt: "Mommy's Log - Free Baby Tracker App" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -53,6 +54,20 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="google-site-verification" content="E-8CwF3hdBl_e-q_3xT2Uzx_qvsaE0UJHXxUbyBZcYQ" />
+        <meta name="google-site-verification" content="PBGzHMfSRU7zDmJgY0YVTmpVSpRFA_fhr2DFv9GscvE" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Mommy's Log",
+              url: "https://mommyslog.com",
+              logo: "https://mommyslog.com/icon.png",
+              sameAs: ["https://apps.apple.com/us/app/mommys-log/id6755473620"],
+            }),
+          }}
+        />
       </head>
       <body className="antialiased">
         {/* Google Analytics */}

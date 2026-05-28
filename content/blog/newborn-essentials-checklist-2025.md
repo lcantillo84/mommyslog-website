@@ -7,6 +7,7 @@ category: "Baby Gear"
 featured: false
 affiliate: true
 image: "https://picsum.photos/seed/newborn-essentials/1200/600"
+keywords: ["newborn essentials checklist", "newborn baby checklist", "what to buy for newborn", "newborn must haves", "baby registry checklist", "newborn baby essentials list"]
 ---
 
 *This post has Amazon affiliate links — if you buy through them I get a small commission at no extra cost to you. I only share what I'd actually tell my hermana (that means sister!) to buy.*

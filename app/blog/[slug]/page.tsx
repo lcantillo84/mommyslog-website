@@ -26,13 +26,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${post.title} | Mommy's Log`,
     description: post.description,
+    keywords: post.keywords,
+    alternates: {
+      canonical: `https://mommyslog.com/blog/${slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.description,
       url: `https://mommyslog.com/blog/${slug}`,
       type: "article",
       publishedTime: post.date,
-      images: post.image ? [{ url: post.image }] : [],
+      modifiedTime: post.updated || post.date,
+      images: post.image ? [{ url: post.image, width: 1200, height: 600, alt: post.title }] : [],
     },
     twitter: {
       card: "summary_large_image",
@@ -50,14 +55,15 @@ export default async function BlogPostPage({ params }: PageProps) {
     notFound();
   }
 
-  const jsonLd = {
+  const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title,
     description: post.description,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updated || post.date,
     image: post.image || undefined,
+    keywords: post.keywords?.join(", "),
     author: {
       "@type": "Organization",
       name: "Mommy's Log",
@@ -67,6 +73,10 @@ export default async function BlogPostPage({ params }: PageProps) {
       "@type": "Organization",
       name: "Mommy's Log",
       url: "https://mommyslog.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://mommyslog.com/icon.png",
+      },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
@@ -74,12 +84,27 @@ export default async function BlogPostPage({ params }: PageProps) {
     },
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://mommyslog.com" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://mommyslog.com/blog" },
+      { "@type": "ListItem", position: 3, name: post.title, item: `https://mommyslog.com/blog/${slug}` },
+    ],
+  };
+
   return (
     <main className="min-h-screen bg-ml-cream">
       <Script
         id="article-jsonld"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <Script
+        id="breadcrumb-jsonld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
       {/* Nav */}
