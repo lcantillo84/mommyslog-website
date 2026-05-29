@@ -172,14 +172,112 @@ Current tokens:
 ```yaml
 ---
 title: "Post Title"
-date: "Month DD, YYYY"
+date: "YYYY-MM-DD"
 description: "One sentence description shown as pull-quote"
 category: "Baby Gear"  # or: Baby Sleep, Breastfeeding, Baby Care, New Parents, App Reviews
 readTime: "X min read"
-featured: true  # optional — marks as featured post on blog index
-affiliate: true  # optional — shows affiliate disclosure in header
+featured: true        # optional — marks as featured post on blog index
+affiliate: true       # optional — shows affiliate disclosure in header
+image: "https://picsum.photos/seed/keyword/1200/600"
+keywords: ["primary keyword", "secondary keyword", "tertiary keyword"]
+updated: "YYYY-MM-DD" # optional — set when article is revised, used in JSON-LD dateModified
 ---
 ```
-##very importan of the blog always add at the end the disclaimer
 
-*Disclaimer: This article is for informational purposes only and does not replace medical advice. If you have concerns about breastfeeding, please consult with your healthcare provider or a certified lactation consultant.*
+## CRITICAL: Always add this disclaimer at the end of every blog post
+
+*Disclaimer: This article is for informational purposes only and does not replace medical advice. If you have concerns about [topic], please consult with your healthcare provider or a certified lactation consultant.*
+
+---
+
+## SEO Setup — What Is Already Done (DO NOT redo or duplicate)
+
+All of the following is already implemented and working as of May 2026:
+
+- **Google Analytics:** GA4 tag `G-0TV051EP9P` in `app/layout.tsx` — firing correctly
+- **Google Search Console:** Verified with tag `PBGzHMfSRU7zDmJgY0YVTmpVSpRFA_fhr2DFv9GscvE` in `app/layout.tsx`
+- **Sitemap:** Auto-generated at `https://mommyslog.com/sitemap.xml` — scans `content/blog/` automatically. Every new `.md` file is picked up without code changes.
+- **Robots.txt:** Live at `https://mommyslog.com/robots.txt`
+- **Canonical URLs:** Set on every page and blog post
+- **JSON-LD structured data:** Article schema + BreadcrumbList on every blog post. Organization schema in root layout.
+- **Open Graph + Twitter cards:** On all pages with image dimensions declared
+- **Keywords per article:** Every article has a `keywords` array in frontmatter parsed by `lib/blog.ts`
+
+**Domain setup (finalized May 2026):**
+- Primary domain: `https://mommyslog.com` (no www)
+- `www.mommyslog.com` → 308 permanent redirect → `mommyslog.com`
+- Hosted on Vercel, domain registered on GoDaddy
+- GoDaddy DNS: A record `@` → `76.76.21.21` AND `216.198.79.1` (both Vercel IPs, keep both)
+- GoDaddy DNS: CNAME `www` → `cname.vercel-dns.com`
+
+**DO NOT add another verification meta tag, another GA script, another sitemap entry, or another canonical tag — they are already there.**
+
+---
+
+## Content Strategy — Learned from Analytics (updated continuously)
+
+### What works (drives real traffic)
+- **"Best [X] apps" listicle format** — the ONLY format currently driving organic Google search traffic
+- Top article: `best-baby-feeding-tracker-apps-2025` — 14 views, 36s avg time, primary traffic driver
+- App Store link in every article: `https://apps.apple.com/us/app/mommys-log/id6755473620`
+
+### What does NOT work yet
+- Broad educational how-to content ("breastfeeding tips") — ranking at position 84 on Google (page 8-9), zero clicks
+- These articles exist but need time + more site authority to rank — do not delete them
+
+### Google Search Console insights (May 2026)
+- Top query: "breastfeeding tips for new moms" — 22 impressions, 0 clicks, position 84.6
+- App queries appearing: "baby feeding and diaper log app", "mommy's log baby feeding diaper tracker app"
+- Strategy: target LOW competition keywords (app-specific, niche baby tracking) not broad parenting terms
+
+### Keyword targeting priority
+1. "baby feeding tracker app" — primary target, moderate competition
+2. "baby tracker no subscription" — low competition, high intent, Mommy's Log wins this
+3. "free baby tracker app" — broad but relevant
+4. Avoid: broad breastfeeding/parenting terms — too competitive for a new site
+
+### Article format rules (learned from data)
+- Every article MUST link to the App Store at least twice (once mid-article, once at the end)
+- Use the real App Store URL: `https://apps.apple.com/us/app/mommys-log/id6755473620`
+- Never use `#` as a placeholder link — always use the real URL
+- Cross-link between articles — especially link TO `best-baby-feeding-tracker-apps-2025` from new articles (it's the top performer)
+
+---
+
+## Article Pipeline — Agreed and Queued
+
+Articles to write next, in order (agreed with user):
+1. **Baby wake windows by age (0–6 months)** — Category: Baby Sleep. When to put baby down based on awake time. Massive search volume, different from white noise machines article.
+2. **Newborn weight gain week by week** — Category: Baby Care. What's normal, what doctors check, ties into feeding/diaper tracking logs.
+
+Do not suggest other topics first — write these in order when asked for the next article.
+
+---
+
+## Existing Articles (DO NOT duplicate these topics)
+
+| File | Topic | Category |
+|---|---|---|
+| `best-baby-feeding-tracker-apps-2025.md` | App comparison — feeding trackers | App Reviews |
+| `best-baby-diaper-tracker-apps-2026.md` | App comparison — diaper trackers | App Reviews |
+| `best-baby-bottles-for-breastfed-babies.md` | Product review — bottles | Baby Gear |
+| `best-white-noise-machines-for-babies.md` | Product review — white noise | Baby Sleep |
+| `breastfeeding-tips-first-time-moms.md` | How-to — breastfeeding technique | Breastfeeding |
+| `cluster-feeding-survival-guide.md` | Deep dive — cluster feeding | Breastfeeding |
+| `first-pediatrician-visit-what-to-expect.md` | How-to — pediatrician visit | New Parents |
+| `how-to-track-newborn-feedings.md` | How-to — feeding tracking habit | New Parents |
+| `newborn-diaper-guide-what-is-normal.md` | Guide — diaper output norms | Baby Care |
+| `newborn-essentials-checklist-2025.md` | Checklist — what to buy | Baby Gear |
+
+---
+
+## Tools & Access
+
+| Tool | URL | Purpose |
+|---|---|---|
+| Google Analytics | analytics.google.com | Track page views, sessions, events |
+| Google Search Console | search.google.com/search-console | Track keyword rankings, indexing |
+| Vercel | vercel.com | Hosting, domain config, deployments |
+| GoDaddy | dcc.godaddy.com | DNS records for mommyslog.com |
+
+**Search Console → Performance = the Queries report.** This shows what keywords people search to find the site and what position each article ranks. Check this weekly to guide content decisions.
