@@ -3,7 +3,11 @@ import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
 
 export default function Home() {
-  const posts = getAllPosts().slice(0, 3);
+  const allPosts = getAllPosts();
+  const pinnedSlug = "best-baby-feeding-tracker-apps-2025";
+  const pinned = allPosts.find((p) => p.slug === pinnedSlug);
+  const others = allPosts.filter((p) => p.slug !== pinnedSlug).slice(0, 2);
+  const posts = pinned ? [pinned, ...others] : allPosts.slice(0, 3);
 
   return (
     <main className="min-h-screen bg-ml-cream">
@@ -51,22 +55,27 @@ export default function Home() {
             </h1>
 
             <p className="text-xl md:text-2xl text-ml-secondary mb-10 max-w-2xl mx-auto leading-relaxed">
-              Log feedings and diapers in seconds. All data stays on your device.
+              The baby feeding tracker that&apos;s actually free. Log feedings and diapers in seconds — no subscription, no account, no ads.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a
-                href="https://apps.apple.com/us/app/mommys-log/id6755473620"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block hover:opacity-90 transition transform hover:scale-105"
-              >
-                <img
-                  src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1734912000"
-                  alt="Download on the App Store"
-                  className="h-16 md:h-18"
-                />
-              </a>
+              <div className="flex flex-col items-center gap-2">
+                <a
+                  href="https://apps.apple.com/us/app/mommys-log/id6755473620"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block hover:opacity-90 transition transform hover:scale-105"
+                >
+                  <img
+                    src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1734912000"
+                    alt="Download on the App Store"
+                    className="h-16 md:h-18"
+                  />
+                </a>
+                <p className="text-sm text-ml-secondary font-semibold">
+                  ⭐⭐⭐⭐⭐ <span className="text-ml-text">4.9</span> · App Store
+                </p>
+              </div>
               <Link
                 href="/blog"
                 className="inline-flex items-center gap-2 text-ml-secondary hover:text-ml-teal font-semibold transition"
@@ -102,6 +111,36 @@ export default function Home() {
         </div>
       </section>
 
+      {/* How It Works Section */}
+      <section className="px-4 py-20 bg-ml-cream">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold text-ml-text mb-3">How it works</h2>
+            <p className="text-lg text-ml-secondary">Three taps. Done.</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            {[
+              { step: "1", icon: "🍼", title: "Tap to log", desc: "One tap starts a feeding or diaper log. Built-in timer, side tracking, and auto-suggestions — no typing required." },
+              { step: "2", icon: "📅", title: "See your patterns", desc: "Full history by day. Spot cluster feeding, track diaper output, and walk into pediatrician visits with real data." },
+              { step: "3", icon: "🔄", title: "Share with your partner", desc: "Both parents see everything in real time via iCloud. No shared account — just open the app and it's there." },
+            ].map(({ step, icon, title, desc }, i) => (
+              <div
+                key={step}
+                className="animate-fade-in-up bg-ml-card rounded-[20px] p-8 shadow-[0_4px_8px_rgba(0,0,0,0.09)] border border-ml-teal/10 text-center"
+                style={{ animationDelay: `${i * 0.1}s` }}
+              >
+                <div className="w-10 h-10 bg-ml-teal rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-lg">{step}</span>
+                </div>
+                <div className="text-4xl mb-4">{icon}</div>
+                <h3 className="text-lg font-bold text-ml-text mb-2">{title}</h3>
+                <p className="text-ml-secondary text-sm leading-relaxed">{desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section className="px-4 py-20 md:py-28 bg-ml-cream">
         <div className="max-w-6xl mx-auto">
@@ -116,7 +155,7 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-ml-card rounded-[20px] p-8 shadow-[0_4px_8px_rgba(0,0,0,0.09)]">
+            <div className="bg-ml-card rounded-[20px] p-8 shadow-[0_4px_8px_rgba(0,0,0,0.09)] hover:scale-[1.02] hover:shadow-[0_12px_32px_rgba(91,168,159,0.15)] transition-all duration-300">
               <div className="w-14 h-14 bg-ml-blue rounded-[16px] flex items-center justify-center mb-5">
                 <span className="text-2xl">🍼</span>
               </div>
@@ -126,7 +165,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-ml-card rounded-[20px] p-8 shadow-[0_4px_8px_rgba(0,0,0,0.09)]">
+            <div className="bg-ml-card rounded-[20px] p-8 shadow-[0_4px_8px_rgba(0,0,0,0.09)] hover:scale-[1.02] hover:shadow-[0_12px_32px_rgba(91,168,159,0.15)] transition-all duration-300">
               <div className="w-14 h-14 bg-ml-caramel/40 rounded-[16px] flex items-center justify-center mb-5">
                 <span className="text-2xl">🧷</span>
               </div>
@@ -136,7 +175,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-ml-card rounded-[20px] p-8 shadow-[0_4px_8px_rgba(0,0,0,0.09)]">
+            <div className="bg-ml-card rounded-[20px] p-8 shadow-[0_4px_8px_rgba(0,0,0,0.09)] hover:scale-[1.02] hover:shadow-[0_12px_32px_rgba(91,168,159,0.15)] transition-all duration-300">
               <div className="w-14 h-14 bg-ml-sand/60 rounded-[16px] flex items-center justify-center mb-5">
                 <span className="text-2xl">📅</span>
               </div>
@@ -146,7 +185,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-ml-teal/10 rounded-[20px] p-8 shadow-[0_4px_8px_rgba(0,0,0,0.09)] border border-ml-teal/20">
+            <div className="bg-ml-teal/10 rounded-[20px] p-8 shadow-[0_4px_8px_rgba(0,0,0,0.09)] hover:scale-[1.02] hover:shadow-[0_12px_32px_rgba(91,168,159,0.2)] transition-all duration-300 border border-ml-teal/20">
               <div className="w-14 h-14 bg-ml-teal rounded-[16px] flex items-center justify-center mb-5">
                 <span className="text-2xl">🔄</span>
               </div>
@@ -231,15 +270,17 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          {/* Mobile: horizontal scroll carousel. Desktop: 4-column grid */}
+          <div className="flex md:grid md:grid-cols-4 gap-6 overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
             {[
               { src: "/main-feedingpage.PNG", alt: "Mommy's Log - Main Feeding Page" },
               { src: "/feeding.PNG", alt: "Mommy's Log - Feeding Tracker", offset: true },
               { src: "/History.PNG", alt: "Mommy's Log - History View" },
+              { src: "/settings.PNG", alt: "Mommy's Log - Settings" },
             ].map(({ src, alt, offset }) => (
               <div
                 key={src}
-                className={`rounded-3xl overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.12)] border-8 border-ml-text bg-ml-text transform hover:scale-105 transition-transform duration-300${offset ? " md:-mt-8" : ""}`}
+                className={`snap-center shrink-0 w-[260px] md:w-auto rounded-3xl overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.12)] border-8 border-ml-text bg-ml-text transform hover:scale-105 transition-transform duration-300${offset ? " md:-mt-8" : ""}`}
               >
                 <Image
                   src={src}
@@ -252,6 +293,7 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <p className="text-center text-sm text-ml-secondary mt-4 md:hidden">← Swipe to see more →</p>
         </div>
       </section>
 
