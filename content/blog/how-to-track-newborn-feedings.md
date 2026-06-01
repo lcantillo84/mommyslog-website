@@ -93,7 +93,7 @@ Until then, the fewer taps it takes, the more likely you'll actually do it.
 
 ## The App That Makes This Easy
 
-That's exactly why we built [Mommy's Log](# "Download on the App Store"). Log a feeding in two taps — start time, side, duration, diaper. No account. No ads. Everything stays on your phone. Your partner can see the same log in real time with Partner Sync.
+That's exactly why we built [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620). Log a feeding in two taps — start time, side, duration, diaper. No account. No ads. Everything stays on your phone. Your partner can see the same log in real time with Partner Sync.
 
 It's free. It's private. And it's the reason you'll be able to answer your pediatrician's questions with confidence instead of guessing.
 

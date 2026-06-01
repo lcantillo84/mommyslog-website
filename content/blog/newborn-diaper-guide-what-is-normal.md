@@ -160,6 +160,10 @@ Every baby is different, but tracking helps you understand YOUR baby's normal. W
 
 Don't stress about every diaper—but do pay attention to the overall pattern. And remember: if something seems off, trust your instincts and call your pediatrician. That's what they're there for.
 
+## Stop Counting in Your Head — Log It Instead
+
+One tap in [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) logs a wet or dirty diaper with a timestamp. At your next pediatrician visit you'll have the exact numbers — no guessing. Free, no account, everything stays on your phone. See our [full comparison of diaper tracker apps →](/blog/best-baby-diaper-tracker-apps-2026)
+
 ---
 
 *This article is for informational purposes only. Always consult your pediatrician with specific concerns about your baby's health.*
