@@ -83,6 +83,29 @@ export default function RootLayout({
             gtag('config', 'G-0TV051EP9P');
           `}
         </Script>
+        <Script id="link-tracking" strategy="afterInteractive">
+          {`
+            document.addEventListener('click', function(e) {
+              var link = e.target.closest('a');
+              if (!link || !link.href || typeof gtag === 'undefined') return;
+
+              if (link.href.includes('apps.apple.com')) {
+                gtag('event', 'app_store_click', {
+                  event_category: 'conversion',
+                  event_label: window.location.pathname
+                });
+              }
+
+              if (link.href.includes('amzn.to') || link.href.includes('amazon.com')) {
+                gtag('event', 'affiliate_click', {
+                  event_category: 'monetization',
+                  event_label: window.location.pathname,
+                  link_url: link.href
+                });
+              }
+            });
+          `}
+        </Script>
         {children}
       </body>
     </html>

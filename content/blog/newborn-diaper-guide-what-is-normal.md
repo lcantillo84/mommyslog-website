@@ -5,7 +5,7 @@ date: "2025-11-20"
 readTime: "8 min read"
 category: "Baby Care"
 featured: false
-image: "https://picsum.photos/seed/baby-diaper/1200/600"
+image: "https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?w=1200&h=600&fit=crop&q=80"
 keywords: ["newborn diaper guide", "how many diapers newborn per day", "normal newborn diapers", "newborn wet diapers per day", "newborn dirty diaper count", "newborn diaper output"]
 ---
 

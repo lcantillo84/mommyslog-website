@@ -6,7 +6,7 @@ readTime: "7 min read"
 category: "Baby Gear"
 featured: false
 affiliate: true
-image: "https://picsum.photos/seed/newborn-essentials/1200/600"
+image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=1200&h=600&fit=crop&q=80"
 keywords: ["newborn essentials checklist", "newborn baby checklist", "what to buy for newborn", "newborn must haves", "baby registry checklist", "newborn baby essentials list"]
 ---
 

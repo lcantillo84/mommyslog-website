@@ -104,7 +104,17 @@ export default function BlogPage() {
           {regularPosts.map((post) => (
             <Link href={`/blog/${post.slug}`} key={post.slug} className="group">
               <article className="h-full bg-ml-card rounded-[20px] shadow-[0_4px_8px_rgba(0,0,0,0.09)] hover:shadow-[0_8px_16px_rgba(91,168,159,0.15)] border border-ml-teal/10 hover:border-ml-teal/30 transition-all duration-300 overflow-hidden">
-                <div className="h-1.5 bg-ml-teal"></div>
+                {post.image ? (
+                  <div className="h-48 overflow-hidden">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                ) : (
+                  <div className="h-1.5 bg-ml-teal"></div>
+                )}
                 <div className="p-6">
                   {post.category && (
                     <span className="inline-block text-xs font-bold text-ml-teal bg-ml-teal/10 px-3 py-1 rounded-full mb-4">

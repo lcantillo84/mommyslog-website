@@ -5,7 +5,7 @@ date: "2025-01-21"
 readTime: "10 min read"
 category: "App Reviews"
 featured: true
-image: "https://picsum.photos/seed/baby-app/1200/600"
+image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&h=600&fit=crop&q=80"
 keywords: ["best baby feeding tracker app", "free baby feeding tracker", "baby feeding app", "newborn feeding log app", "breastfeeding tracker app", "best free baby tracker app", "baby feeding tracker no subscription"]
 ---
 

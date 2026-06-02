@@ -5,7 +5,7 @@ date: "2025-11-22"
 readTime: "12 min read"
 category: "Breastfeeding"
 featured: false
-image: "https://picsum.photos/seed/breastfeeding/1200/600"
+image: "https://images.unsplash.com/photo-1590579491624-f98f36d4c763?w=1200&h=600&fit=crop&q=80"
 keywords: ["breastfeeding tips first time mom", "how to breastfeed newborn", "breastfeeding advice new mom", "newborn breastfeeding help", "breastfeeding problems solutions", "breastfeeding tips beginner"]
 ---
 

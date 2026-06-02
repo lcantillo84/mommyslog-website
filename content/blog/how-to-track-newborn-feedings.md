@@ -6,7 +6,7 @@ readTime: "8 min read"
 category: "New Parents"
 featured: false
 affiliate: false
-image: "https://picsum.photos/seed/newbornlog/1200/600"
+image: "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=1200&h=600&fit=crop&q=80"
 keywords: ["how to track newborn feedings", "newborn feeding log", "baby feeding tracker", "track baby feedings", "newborn feeding schedule tracker", "baby feeding log app"]
 ---
 

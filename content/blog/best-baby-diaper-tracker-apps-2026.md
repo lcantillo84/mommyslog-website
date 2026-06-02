@@ -6,7 +6,7 @@ readTime: "9 min read"
 category: "App Reviews"
 featured: false
 affiliate: false
-image: "https://picsum.photos/seed/diapertracker/1200/600"
+image: "https://images.unsplash.com/photo-1519689373023-dd07c7988603?w=1200&h=600&fit=crop&q=80"
 keywords: ["best diaper tracker app", "baby diaper tracking app", "newborn diaper log app", "free diaper tracker", "baby diaper counter app", "best free diaper tracker"]
 ---
 

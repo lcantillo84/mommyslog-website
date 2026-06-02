@@ -94,6 +94,16 @@ export default async function BlogPostPage({ params }: PageProps) {
     ],
   };
 
+  const categoryGradients: Record<string, string> = {
+    "Baby Gear":     "linear-gradient(135deg,#5BA89F 0%,#3d7a72 100%)",
+    "Baby Sleep":    "linear-gradient(135deg,#7c6fa0 0%,#4a3f6b 100%)",
+    "Breastfeeding": "linear-gradient(135deg,#e8a0b4 0%,#c4607a 100%)",
+    "Baby Care":     "linear-gradient(135deg,#C4A07A 0%,#8c6d4f 100%)",
+    "New Parents":   "linear-gradient(135deg,#B8D4E0 0%,#5a8fa3 100%)",
+    "App Reviews":   "linear-gradient(135deg,#252220 0%,#5BA89F 100%)",
+  };
+  const heroGradient = categoryGradients[post.category ?? ""] ?? "linear-gradient(135deg,#5BA89F 0%,#3d7a72 100%)";
+
   return (
     <main className="min-h-screen bg-ml-cream">
       <Script
@@ -132,24 +142,24 @@ export default async function BlogPostPage({ params }: PageProps) {
         </div>
       </nav>
 
-      {/* Hero */}
-      <header className="bg-ml-cream border-b border-ml-teal/10">
-        <div className="max-w-3xl mx-auto px-6 py-12 md:py-20">
+      {/* Hero — category gradient */}
+      <header style={{ background: heroGradient }}>
+        <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
           {post.category && (
-            <span className="inline-block text-xs font-bold text-ml-teal bg-ml-teal/10 px-3 py-1 rounded-full mb-5">
+            <span className="inline-block text-xs font-bold text-white/80 bg-white/20 px-3 py-1 rounded-full mb-5">
               {post.category}
             </span>
           )}
-          <h1 className="text-3xl md:text-5xl font-bold text-ml-text leading-tight mb-5">
+          <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-5">
             {post.title}
           </h1>
-          <div className="flex flex-wrap items-center gap-3 text-ml-secondary text-sm">
+          <div className="flex flex-wrap items-center gap-3 text-white/70 text-sm">
             <time>{post.date}</time>
-            <span className="w-1 h-1 bg-ml-secondary/40 rounded-full"></span>
+            <span className="w-1 h-1 bg-white/40 rounded-full"></span>
             <span>{post.readTime}</span>
             {post.affiliate && (
               <>
-                <span className="w-1 h-1 bg-ml-secondary/40 rounded-full"></span>
+                <span className="w-1 h-1 bg-white/40 rounded-full"></span>
                 <span>Contains affiliate links</span>
               </>
             )}
@@ -163,6 +173,18 @@ export default async function BlogPostPage({ params }: PageProps) {
           {post.description}
         </p>
       </div>
+
+      {/* Featured image */}
+      {post.image && (
+        <div className="max-w-3xl mx-auto px-6 pb-8">
+          <img
+            src={post.image}
+            alt={post.title}
+            className="w-full rounded-[20px] shadow-[0_8px_24px_rgba(0,0,0,0.12)]"
+            style={{ maxHeight: "400px", objectFit: "cover" }}
+          />
+        </div>
+      )}
 
       {/* Article */}
       <article className="max-w-3xl mx-auto px-6 pb-16">

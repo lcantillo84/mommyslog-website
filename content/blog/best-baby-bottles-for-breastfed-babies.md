@@ -6,7 +6,7 @@ readTime: "5 min read"
 category: "Baby Gear"
 featured: false
 affiliate: true
-image: "https://picsum.photos/seed/baby-bottles/1200/600"
+image: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=1200&h=600&fit=crop&q=80"
 keywords: ["best baby bottles for breastfed babies", "bottles for breastfed baby", "anti colic bottles breastfeeding", "paced bottle feeding", "best bottles for breastfeeding moms", "baby bottle refusing breast"]
 ---
 

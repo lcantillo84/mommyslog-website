@@ -6,7 +6,7 @@ category: "Baby Sleep"
 readTime: "9 min read"
 featured: false
 affiliate: false
-image: "https://picsum.photos/seed/wakesleep/1200/600"
+image: "https://images.unsplash.com/photo-1566004100631-35d015d6a491?w=1200&h=600&fit=crop&q=80"
 keywords: ["baby wake windows", "newborn wake windows", "how long should newborn be awake", "wake windows by age", "baby awake time between naps", "newborn sleep schedule"]
 ---
 

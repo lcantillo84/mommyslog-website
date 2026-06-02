@@ -6,7 +6,7 @@ readTime: "9 min read"
 category: "Breastfeeding"
 featured: false
 affiliate: false
-image: "https://picsum.photos/seed/clusterfeed/1200/600"
+image: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=1200&h=600&fit=crop&q=80"
 keywords: ["cluster feeding", "what is cluster feeding", "cluster feeding newborn", "baby cluster feeding evening", "how to survive cluster feeding", "breastfeeding cluster feeding", "cluster feeding growth spurt"]
 ---
 

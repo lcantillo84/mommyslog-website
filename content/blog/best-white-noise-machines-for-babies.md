@@ -6,7 +6,7 @@ readTime: "5 min read"
 category: "Baby Sleep"
 featured: false
 affiliate: true
-image: "https://picsum.photos/seed/baby-sleep/1200/600"
+image: "https://images.unsplash.com/photo-1519689680058-324335c77eba?w=1200&h=600&fit=crop&q=80"
 keywords: ["best white noise machine for baby", "white noise machine newborn", "baby sleep white noise", "sound machine for baby sleep", "best sound machine for baby", "white noise baby sleep"]
 ---
 

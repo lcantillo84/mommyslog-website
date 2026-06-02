@@ -5,7 +5,7 @@ date: "2025-11-18"
 readTime: "7 min read"
 category: "New Parents"
 featured: false
-image: "https://picsum.photos/seed/pediatrician/1200/600"
+image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&h=600&fit=crop&q=80"
 keywords: ["first pediatrician visit newborn", "baby first doctor visit", "newborn well baby visit", "what to expect newborn doctor appointment", "pediatrician visit checklist newborn"]
 ---
 
