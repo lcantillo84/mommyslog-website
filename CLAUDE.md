@@ -1,5 +1,32 @@
 # Mommy's Log Website — Claude Instructions
 
+---
+
+## 🚀 QUICK START — New Claude Session? Read This First
+
+**What this project is:** mommyslog.com — a blog that drives two revenue streams:
+1. **App Store downloads** of Mommy's Log (free iOS baby tracker) → `https://apps.apple.com/us/app/mommys-log/id6755473620`
+2. **Amazon affiliate commissions** from product recommendation articles → affiliate tag `mommyslog1-20`
+
+**Current state as of June 2026:**
+- 14 blog articles live, all SEO-optimized, all with 2+ App Store links, disclaimers, and internal cross-links
+- GA4 tracking live — `app_store_click` and `affiliate_click` events firing correctly
+- Homepage has split hero layout, scroll animations, related articles on every post
+- All Amazon affiliate links verified with `tag=mommyslog1-20`
+
+**Next article to write (already queued):**
+→ **Baby Feeding Schedule by Age (0–12 months)** — Category: New Parents — "how often to feed newborn", "baby feeding schedule by age"
+
+**To pick up and start working, say:**
+> "Let's work on the blog" — Claude will check the pipeline and write the next article, or ask what you want to tackle.
+
+**3 rules that matter most in every session:**
+1. Never change `ml-*` design tokens or visual styling without asking first
+2. Every new article needs 1,200+ words, 2 App Store links, a disclaimer, and a comparison table if it has affiliate links
+3. Never guess or invent Amazon product URLs — user provides them, Claude adds `?tag=mommyslog1-20`
+
+---
+
 ## CRITICAL: Design System Lock
 
 **NEVER change, override, or "clean up" the design system tokens or visual styling without explicit confirmation from the user.**
@@ -316,6 +343,23 @@ All of the following is already implemented and working as of May 2026:
 - Use the real App Store URL: `https://apps.apple.com/us/app/mommys-log/id6755473620`
 - Never use `#` as a placeholder link — always use the real URL
 - Cross-link between articles — especially link TO `best-baby-feeding-tracker-apps-2025` from new articles (it's the top performer)
+
+### RULE: Every article must tie back to Mommy's Log AND at least one affiliate product
+
+Every article published on this site has one of two revenue goals (ideally both):
+1. **Drive App Store downloads** — link to Mommy's Log naturally within the article body, tied to a problem the article is solving. Not just a CTA at the bottom — at least one mid-article mention where the app is the solution to something specific in that section.
+2. **Drive affiliate commissions** — include at least one Amazon product recommendation that fits the article topic. Use products already on the site if they're relevant (nursing pillow, Dr. Brown's, Haakaa, Hatch, white noise machines, etc.). If the topic has no natural product fit, skip affiliate — don't force it.
+
+**How to find the natural Mommy's Log tie-in for any article topic:**
+Ask: "At what moment in this article is the reader feeling a problem that logging/tracking solves?" That's where the app mention goes.
+- Sleep article → tie to tracking when baby last fed to calculate wake windows
+- Feeding article → tie to remembering which side / how long / how often
+- Diaper article → tie to tracking output for pediatrician visits
+- Pediatrician article → tie to walking in with real data instead of guessing
+- Product article → tie to tracking feeds after using the product
+
+**How to find the natural affiliate tie-in for any article topic:**
+Ask: "What physical product would genuinely help the reader with what this article covers?" Use only products you'd actually recommend. Check for existing verified links on the site first before asking for new ones.
 
 ### Natural internal linking rule (learned June 2026)
 Links inside article body text must feel like a natural reading flow — not promotional call-outs. The pattern:
