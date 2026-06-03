@@ -5,7 +5,7 @@ date: "2025-11-18"
 readTime: "7 min read"
 category: "New Parents"
 featured: false
-image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&h=600&fit=crop&q=80"
+image: "https://images.unsplash.com/photo-1632052999447-e542d08d4f7d?w=1200&h=600&fit=crop&q=80"
 keywords: ["first pediatrician visit newborn", "baby first doctor visit", "newborn well baby visit", "what to expect newborn doctor appointment", "pediatrician visit checklist newborn"]
 ---
 
@@ -67,7 +67,7 @@ Your doctor will ask about:
 - Number of dirty diapers per day
 - Color and consistency of poop
 
-> **Pro tip**: Track feedings and diapers for a few days before the visit. When the doctor asks "How many wet diapers yesterday?" you'll know exactly.
+> **Pro tip**: Track feedings and diapers for a few days before the visit. When the doctor asks "How many wet diapers yesterday?" you'll know exactly. [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) logs both in two taps — free, no account needed.
 
 ## Questions to Ask Your Pediatrician
 
@@ -194,7 +194,7 @@ Your first pediatrician visit is really about three things:
 
 Come prepared, ask your questions, and remember—no question is too small or silly. You're learning, and that's exactly what these visits are for.
 
-One thing that will make every visit easier: a feeding and diaper log. Pediatricians ask for this data every time. Read [how to track newborn feedings →](/blog/how-to-track-newborn-feedings) and use [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) to have the numbers ready — free, two taps per entry, no account needed.
+One thing that will make every visit easier: a feeding and diaper log. Pediatricians ask for this data every time. Read [how to track newborn feedings →](/blog/how-to-track-newborn-feedings) and use [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) to have the numbers ready — free, two taps per entry, no account needed. See how it ranked in the [best free baby feeding tracker apps →](/blog/best-baby-feeding-tracker-apps-2025).
 
 ---
 

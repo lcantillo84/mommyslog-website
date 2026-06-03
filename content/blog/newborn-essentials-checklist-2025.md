@@ -6,7 +6,7 @@ readTime: "7 min read"
 category: "Baby Gear"
 featured: false
 affiliate: true
-image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=1200&h=600&fit=crop&q=80"
+image: "https://images.unsplash.com/photo-1776741147119-386faf386796?w=1200&h=600&fit=crop&q=80"
 keywords: ["newborn essentials checklist", "newborn baby checklist", "what to buy for newborn", "newborn must haves", "baby registry checklist", "newborn baby essentials list"]
 ---
 
@@ -112,3 +112,5 @@ One more essential that costs nothing: a feeding and diaper tracker. Your pediat
 ---
 
 *As an Amazon Associate I earn from qualifying purchases. Always check with your pediatrician for health advice.*
+
+*Disclaimer: This article is for informational purposes only and does not replace medical advice. If you have concerns about your newborn's health or the products they use, please consult with your healthcare provider.*

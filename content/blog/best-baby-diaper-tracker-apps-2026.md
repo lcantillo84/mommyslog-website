@@ -6,8 +6,17 @@ readTime: "9 min read"
 category: "App Reviews"
 featured: false
 affiliate: false
-image: "https://images.unsplash.com/photo-1519689373023-dd07c7988603?w=1200&h=600&fit=crop&q=80"
+image: "https://images.unsplash.com/photo-1533483595632-c5f0e57a1936?w=1200&h=600&fit=crop&q=80"
 keywords: ["best diaper tracker app", "baby diaper tracking app", "newborn diaper log app", "free diaper tracker", "baby diaper counter app", "best free diaper tracker"]
+faqs:
+  - question: "How many diapers should a newborn have per day?"
+    answer: "Day 1-2: 1-2 wet diapers. Day 3-4: 3-4 wet diapers as milk comes in. Day 5 and beyond: 6 or more wet diapers per day and 3-4 dirty. These are the numbers your pediatrician checks at every weight visit."
+  - question: "When do newborn dirty diapers change frequency?"
+    answer: "Around 6 weeks, many breastfed babies shift from several dirty diapers per day to one every few days or less. This is completely normal and often catches parents off guard. Tracking makes the change visible in your history instead of alarming."
+  - question: "How long do I need to track diapers?"
+    answer: "Most parents track closely for the first 4-6 weeks, then scale back as feeding is established and weight gain is consistent. Use it as long as it is useful."
+  - question: "Do I have to log every single diaper?"
+    answer: "No. An 80% complete log is infinitely more useful than no log. If you miss one during a nap or forget overnight, skip it and pick back up on the next one. The patterns still emerge."
 ---
 
 You're sitting in the pediatrician's office for your two-week weight check. The doctor looks up from the chart and asks: "How many wet diapers has she had in the last 24 hours?"

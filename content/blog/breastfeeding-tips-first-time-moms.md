@@ -5,7 +5,7 @@ date: "2025-11-22"
 readTime: "12 min read"
 category: "Breastfeeding"
 featured: false
-image: "https://images.unsplash.com/photo-1590579491624-f98f36d4c763?w=1200&h=600&fit=crop&q=80"
+image: "https://images.unsplash.com/photo-1567201719502-255e0b3c683a?w=1200&h=600&fit=crop&q=80"
 keywords: ["breastfeeding tips first time mom", "how to breastfeed newborn", "breastfeeding advice new mom", "newborn breastfeeding help", "breastfeeding problems solutions", "breastfeeding tips beginner"]
 ---
 
@@ -67,7 +67,7 @@ Don't wait for crying—that's a late hunger sign. Watch for:
 
 Feeding at early cues makes latching easier for everyone.
 
-> **Pro Tip:** In the foggy newborn days, you WILL forget which breast you used last. Use a simple tracker app to log feedings. When your pediatrician asks "how often is baby eating?" you'll have the answer.
+> **Pro Tip:** In the foggy newborn days, you WILL forget which breast you used last. [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) logs each feed in two taps and remembers which side automatically — free, no account needed. When your pediatrician asks "how often is baby eating?" you'll have the exact answer.
 
 ### 6. Master the Latch
 

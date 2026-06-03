@@ -6,8 +6,15 @@ category: "Baby Sleep"
 readTime: "9 min read"
 featured: false
 affiliate: false
-image: "https://images.unsplash.com/photo-1566004100631-35d015d6a491?w=1200&h=600&fit=crop&q=80"
+image: "https://images.unsplash.com/photo-1496174742515-d2146dcf8e80?w=1200&h=600&fit=crop&q=80"
 keywords: ["baby wake windows", "newborn wake windows", "how long should newborn be awake", "wake windows by age", "baby awake time between naps", "newborn sleep schedule"]
+faqs:
+  - question: "Why does my baby's wake window feel shorter than I expected?"
+    answer: "Most parents underestimate newborn wake windows. A 6-week-old has only a 75-minute window. When they push past it, cortisol spikes and they become overtired — fighting sleep even though they desperately need it. Always start at the low end of the range for your baby's age."
+  - question: "What are signs I missed the wake window?"
+    answer: "Your baby is cranky and overtired but fighting sleep, took more than 30 minutes to settle, had a short nap under 30 minutes followed by fussiness, or was harder than usual to put down at bedtime."
+  - question: "What are signs the wake window is too short?"
+    answer: "Baby is not showing tired cues and cries when put down, takes short naps because they were not tired enough, or takes a long time to fall asleep without being overtired. Try adding 10-15 minutes to the wake window."
 ---
 
 There's a moment every new parent hits, usually around week two, where they realize they have no idea when to put the baby down. The baby is crying. You just fed them. You just changed them. They slept two hours ago. Why are they crying?
@@ -158,6 +165,8 @@ Wake windows are the single most actionable piece of newborn sleep knowledge you
 Start with the low end of the range for your baby's age. Watch how they respond. Adjust by 10–15 minutes at a time.
 
 That's it. You don't need a $300 sleep course. You need a clock and the right number.
+
+And since wake windows connect directly to feeding times, logging both together shows you the full picture. [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) tracks feedings with timestamps so you can calculate wake windows from the last feed — free, no account, works offline.
 
 ---
 

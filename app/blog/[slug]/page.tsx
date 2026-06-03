@@ -1,10 +1,12 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { getPostBySlug, getAllSlugs } from "@/lib/blog";
+import { getPostBySlug, getAllSlugs, getAllPosts } from "@/lib/blog";
 import Script from "next/script";
+import ReadingProgress from "./ReadingProgress";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -55,6 +57,10 @@ export default async function BlogPostPage({ params }: PageProps) {
     notFound();
   }
 
+  const allPosts = getAllPosts();
+  const sameCat = allPosts.filter((p) => p.slug !== slug && p.category === post.category);
+  const relatedPosts = sameCat.length >= 2 ? sameCat.slice(0, 3) : allPosts.filter((p) => p.slug !== slug).slice(0, 3);
+
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -94,6 +100,19 @@ export default async function BlogPostPage({ params }: PageProps) {
     ],
   };
 
+  const faqJsonLd = post.faqs && post.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: post.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  } : null;
+
   const categoryGradients: Record<string, string> = {
     "Baby Gear":     "linear-gradient(135deg,#5BA89F 0%,#3d7a72 100%)",
     "Baby Sleep":    "linear-gradient(135deg,#7c6fa0 0%,#4a3f6b 100%)",
@@ -106,6 +125,8 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   return (
     <main className="min-h-screen bg-ml-cream">
+      <ReadingProgress />
+
       <Script
         id="article-jsonld"
         type="application/ld+json"
@@ -116,6 +137,13 @@ export default async function BlogPostPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {faqJsonLd && (
+        <Script
+          id="faq-jsonld"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
 
       {/* Nav */}
       <nav className="sticky top-0 z-50 bg-ml-cream/80 backdrop-blur-md border-b border-ml-teal/10">
@@ -143,7 +171,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       </nav>
 
       {/* Hero — category gradient */}
-      <header style={{ background: heroGradient }}>
+      <header style={{ background: heroGradient }} className="animate-fade-in">
         <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
           {post.category && (
             <span className="inline-block text-xs font-bold text-white/80 bg-white/20 px-3 py-1 rounded-full mb-5">
@@ -154,7 +182,15 @@ export default async function BlogPostPage({ params }: PageProps) {
             {post.title}
           </h1>
           <div className="flex flex-wrap items-center gap-3 text-white/70 text-sm">
-            <time>{post.date}</time>
+            <time dateTime={post.date}>{post.date}</time>
+            {post.updated && post.updated !== post.date && (
+              <>
+                <span className="w-1 h-1 bg-white/40 rounded-full"></span>
+                <time dateTime={post.updated} className="text-white/50 text-xs">
+                  Updated {post.updated}
+                </time>
+              </>
+            )}
             <span className="w-1 h-1 bg-white/40 rounded-full"></span>
             <span>{post.readTime}</span>
             {post.affiliate && (
@@ -168,7 +204,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       </header>
 
       {/* Description pull-quote */}
-      <div className="max-w-3xl mx-auto px-6 py-8">
+      <div className="max-w-3xl mx-auto px-6 py-8 animate-slide-in-up">
         <p className="text-lg md:text-xl text-ml-secondary leading-relaxed border-l-4 border-ml-teal pl-5">
           {post.description}
         </p>
@@ -176,12 +212,14 @@ export default async function BlogPostPage({ params }: PageProps) {
 
       {/* Featured image */}
       {post.image && (
-        <div className="max-w-3xl mx-auto px-6 pb-8">
-          <img
+        <div className="max-w-3xl mx-auto px-6 pb-8 animate-scale-in">
+          <Image
             src={post.image}
             alt={post.title}
-            className="w-full rounded-[20px] shadow-[0_8px_24px_rgba(0,0,0,0.12)]"
-            style={{ maxHeight: "400px", objectFit: "cover" }}
+            width={1200}
+            height={400}
+            className="w-full rounded-[20px] shadow-[0_8px_24px_rgba(0,0,0,0.12)] object-cover"
+            priority={false}
           />
         </div>
       )}
@@ -200,6 +238,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           prose-blockquote:border-l-4 prose-blockquote:border-ml-teal prose-blockquote:bg-ml-teal/8 prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:rounded-r-2xl prose-blockquote:not-italic prose-blockquote:text-ml-secondary
           prose-table:text-sm prose-th:bg-ml-teal/10 prose-th:text-ml-text
           prose-hr:border-ml-teal/15
+          prose-img:rounded-[16px] prose-img:shadow-[0_4px_16px_rgba(0,0,0,0.10)]
           prose-em:text-ml-secondary/70 prose-em:text-sm">
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
@@ -208,6 +247,17 @@ export default async function BlogPostPage({ params }: PageProps) {
                 <a href={href} target="_blank" rel="noopener noreferrer">
                   {children}
                 </a>
+              ),
+              img: ({ src, alt }) => (
+                <span className="block my-8">
+                  <Image
+                    src={src || ""}
+                    alt={alt || ""}
+                    width={800}
+                    height={450}
+                    className="w-full rounded-[16px] shadow-[0_4px_16px_rgba(0,0,0,0.10)] object-cover"
+                  />
+                </span>
               ),
             }}
           >
@@ -258,6 +308,38 @@ export default async function BlogPostPage({ params }: PageProps) {
           </div>
         </div>
       </section>
+
+      {/* Related Articles */}
+      {relatedPosts.length > 0 && (
+        <section className="max-w-3xl mx-auto px-6 pb-16">
+          <h2 className="text-xl font-bold text-ml-text mb-6">
+            More in {post.category ?? "the blog"}
+          </h2>
+          <div className="grid sm:grid-cols-3 gap-4">
+            {relatedPosts.map((related) => (
+              <a key={related.slug} href={`/blog/${related.slug}`} className="group block">
+                <article className="h-full bg-ml-card rounded-[16px] border border-ml-teal/10 hover:border-ml-teal/30 hover:shadow-[0_8px_24px_rgba(91,168,159,0.15)] hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                  {related.image && (
+                    <div className="h-32 overflow-hidden">
+                      <img
+                        src={related.image}
+                        alt={related.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                  )}
+                  <div className="p-4">
+                    <p className="text-xs font-bold text-ml-teal mb-1">{related.readTime}</p>
+                    <h3 className="text-sm font-bold text-ml-text group-hover:text-ml-teal transition line-clamp-2 leading-snug">
+                      {related.title}
+                    </h3>
+                  </div>
+                </article>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* More articles */}
       <div className="border-t border-ml-teal/10 bg-ml-card">

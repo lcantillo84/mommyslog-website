@@ -17,6 +17,15 @@ export const metadata: Metadata = {
   },
 };
 
+const categoryColors: Record<string, string> = {
+  "Baby Gear":     "bg-[#5BA89F]/10 text-[#3d7a72]",
+  "Baby Sleep":    "bg-[#7c6fa0]/10 text-[#4a3f6b]",
+  "Breastfeeding": "bg-[#e8a0b4]/20 text-[#c4607a]",
+  "Baby Care":     "bg-[#C4A07A]/15 text-[#8c6d4f]",
+  "New Parents":   "bg-[#B8D4E0]/20 text-[#5a8fa3]",
+  "App Reviews":   "bg-[#252220]/10 text-[#252220]",
+};
+
 export default function BlogPage() {
   const posts = getAllPosts();
   const featuredPost = posts.find((post) => post.featured);
@@ -37,7 +46,7 @@ export default function BlogPage() {
             Back to Home
           </Link>
 
-          <div className="max-w-3xl">
+          <div className="max-w-3xl animate-fade-in-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-ml-text mb-6 leading-tight">
               The Mommy's Log
               <span className="block text-ml-teal">Blog</span>
@@ -55,18 +64,36 @@ export default function BlogPage() {
           <Link href={`/blog/${featuredPost.slug}`} className="block group">
             <article className="bg-ml-card rounded-[20px] shadow-[0_8px_24px_rgba(0,0,0,0.09)] hover:shadow-[0_12px_32px_rgba(91,168,159,0.15)] transition-all duration-300 overflow-hidden border border-ml-teal/10">
               <div className="md:flex">
-                <div className="md:w-2/5 bg-ml-teal p-8 md:p-12 flex items-center justify-center">
-                  <div className="text-center">
-                    <span className="inline-block bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
-                      FEATURED
-                    </span>
-                    <div className="text-6xl mb-4">📱</div>
-                    <span className="text-white/80 text-sm font-semibold">{featuredPost.category}</span>
+                {featuredPost.image ? (
+                  <div className="md:w-2/5 overflow-hidden">
+                    <img
+                      src={featuredPost.image}
+                      alt={featuredPost.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 min-h-[240px]"
+                    />
                   </div>
-                </div>
+                ) : (
+                  <div className="md:w-2/5 bg-ml-teal p-8 md:p-12 flex items-center justify-center">
+                    <div className="text-center">
+                      <span className="inline-block bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+                        FEATURED
+                      </span>
+                      <div className="text-6xl mb-4">📱</div>
+                      <span className="text-white/80 text-sm font-semibold">{featuredPost.category}</span>
+                    </div>
+                  </div>
+                )}
                 <div className="md:w-3/5 p-8 md:p-12">
+                  <div className="flex items-center gap-3 mb-4">
+                    {featuredPost.category && (
+                      <span className={`text-xs font-bold px-3 py-1 rounded-full ${categoryColors[featuredPost.category] ?? "bg-ml-teal/10 text-ml-teal"}`}>
+                        {featuredPost.category}
+                      </span>
+                    )}
+                    <span className="text-xs font-bold text-white bg-ml-teal px-2 py-1 rounded-full">FEATURED</span>
+                  </div>
                   <div className="flex items-center gap-3 text-sm text-ml-secondary mb-4">
-                    <time>{featuredPost.date}</time>
+                    <time dateTime={featuredPost.date}>{featuredPost.date}</time>
                     <span className="w-1 h-1 bg-ml-secondary/40 rounded-full"></span>
                     <span>{featuredPost.readTime}</span>
                   </div>
@@ -101,23 +128,32 @@ export default function BlogPage() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {regularPosts.map((post) => (
+          {regularPosts.map((post, i) => (
             <Link href={`/blog/${post.slug}`} key={post.slug} className="group">
-              <article className="h-full bg-ml-card rounded-[20px] shadow-[0_4px_8px_rgba(0,0,0,0.09)] hover:shadow-[0_8px_16px_rgba(91,168,159,0.15)] border border-ml-teal/10 hover:border-ml-teal/30 transition-all duration-300 overflow-hidden">
+              <article
+                className="h-full bg-ml-card rounded-[20px] shadow-[0_4px_8px_rgba(0,0,0,0.09)] hover:shadow-[0_12px_28px_rgba(91,168,159,0.18)] border border-ml-teal/10 hover:border-ml-teal/30 transition-all duration-300 overflow-hidden animate-fade-in-up"
+                style={{ animationDelay: `${i * 0.06}s`, opacity: 0 }}
+              >
                 {post.image ? (
-                  <div className="h-48 overflow-hidden">
+                  <div className="h-48 overflow-hidden relative">
                     <img
                       src={post.image}
                       alt={post.title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
+                    {/* Category badge overlay */}
+                    {post.category && (
+                      <span className={`absolute top-3 left-3 text-xs font-bold px-2.5 py-1 rounded-full backdrop-blur-sm ${categoryColors[post.category] ?? "bg-ml-teal/10 text-ml-teal"} bg-white/80`}>
+                        {post.category}
+                      </span>
+                    )}
                   </div>
                 ) : (
                   <div className="h-1.5 bg-ml-teal"></div>
                 )}
                 <div className="p-6">
-                  {post.category && (
-                    <span className="inline-block text-xs font-bold text-ml-teal bg-ml-teal/10 px-3 py-1 rounded-full mb-4">
+                  {!post.image && post.category && (
+                    <span className={`inline-block text-xs font-bold px-3 py-1 rounded-full mb-4 ${categoryColors[post.category] ?? "bg-ml-teal/10 text-ml-teal"}`}>
                       {post.category}
                     </span>
                   )}
@@ -129,7 +165,7 @@ export default function BlogPage() {
                   </p>
                   <div className="flex items-center justify-between pt-4 border-t border-ml-teal/10">
                     <div className="flex items-center gap-2 text-xs text-ml-secondary">
-                      <time>{post.date}</time>
+                      <time dateTime={post.date}>{post.date}</time>
                       <span className="w-1 h-1 bg-ml-secondary/40 rounded-full"></span>
                       <span>{post.readTime}</span>
                     </div>

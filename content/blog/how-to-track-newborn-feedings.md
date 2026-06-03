@@ -6,7 +6,7 @@ readTime: "8 min read"
 category: "New Parents"
 featured: false
 affiliate: false
-image: "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=1200&h=600&fit=crop&q=80"
+image: "https://images.unsplash.com/photo-1758024375456-014f504e88d2?w=1200&h=600&fit=crop&q=80"
 keywords: ["how to track newborn feedings", "newborn feeding log", "baby feeding tracker", "track baby feedings", "newborn feeding schedule tracker", "baby feeding log app"]
 ---
 
@@ -98,6 +98,8 @@ That's exactly why we built [Mommy's Log](https://apps.apple.com/us/app/mommys-l
 It's free. It's private. And it's the reason you'll be able to answer your pediatrician's questions with confidence instead of guessing.
 
 [Download Mommy's Log free on the App Store →](https://apps.apple.com/us/app/mommys-log/id6755473620)
+
+Not sure which app to use? We tested 20+ options. See the [7 best free baby feeding tracker apps →](/blog/best-baby-feeding-tracker-apps-2025) to compare.
 
 ---
 

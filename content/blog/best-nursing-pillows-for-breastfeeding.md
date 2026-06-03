@@ -6,7 +6,7 @@ category: "Breastfeeding"
 readTime: "7 min read"
 featured: false
 affiliate: true
-image: "https://images.unsplash.com/photo-1476703993599-0035a21b8bbc?w=1200&h=600&fit=crop&q=80"
+image: "https://images.unsplash.com/photo-1669810432286-358c5622668e?w=1200&h=600&fit=crop&q=80"
 keywords: ["best nursing pillow for breastfeeding", "nursing pillow breastfeeding", "boppy vs my brest friend", "best nursing pillow 2026", "breastfeeding pillow newborn", "nursing pillow for newborn"]
 ---
 
@@ -142,6 +142,8 @@ If positioning and stability are your main challenge — especially in the early
 If you want something versatile that'll still be useful when your baby is rolling around at four months, **Boppy** is the better long-term investment.
 
 Either way: get one before the baby comes. The first week is not the time to be waiting for Prime shipping.
+
+[Download Mommy's Log free on the App Store →](https://apps.apple.com/us/app/mommys-log/id6755473620)
 
 And if you're also working through the early breastfeeding learning curve, our [15 breastfeeding tips for first-time moms →](/blog/breastfeeding-tips-first-time-moms) covers what nobody tells you. If you hit a cluster feeding stretch that feels endless, the [cluster feeding survival guide →](/blog/cluster-feeding-survival-guide) explains exactly what's happening and why it ends.
 

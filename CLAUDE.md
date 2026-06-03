@@ -178,11 +178,57 @@ category: "Baby Gear"  # or: Baby Sleep, Breastfeeding, Baby Care, New Parents, 
 readTime: "X min read"
 featured: true        # optional — marks as featured post on blog index
 affiliate: true       # optional — shows affiliate disclosure in header
-image: "https://picsum.photos/seed/keyword/1200/600"
+image: "https://images.unsplash.com/photo-XXXXX?w=1200&h=600&fit=crop&q=80"
 keywords: ["primary keyword", "secondary keyword", "tertiary keyword"]
-updated: "YYYY-MM-DD" # optional — set when article is revised, used in JSON-LD dateModified
+faqs:                  # optional — add for articles with Q&A sections (drives FAQ rich results in Google)
+  - question: "Question text exactly as it appears in the article"
+    answer: "Plain text only — no markdown, no bullet lists. Just prose sentences."
 ---
 ```
+
+**Note on `updated`:*** Do NOT add this manually. `lib/blog.ts` automatically derives `dateModified` from git history. Just commit your changes — the date updates itself.
+
+**Note on title years:** If the title contains a year (e.g., "(2026)"), update the year whenever you edit the article. The SLUG never changes — only the `title` field.
+
+---
+
+## Rules When Updating Existing Articles
+
+1. **`dateModified` is fully automatic** — `lib/blog.ts` reads `git log -1` for each file. Committing any change to an article automatically updates its `dateModified` in JSON-LD. No manual date field needed.
+
+2. **Update the year in the title** if the article has "(2025)" or similar and you're editing it in a later year. Change just the `title` field. The slug stays the same forever.
+
+3. **Add `faqs:` field** if the article has an explicit Q&A section (H3 questions or bold inline questions with paragraph answers). Use plain prose for answers — no markdown syntax inside the YAML strings.
+
+---
+
+## Minimum Content Standards — DO NOT publish below these
+
+| Article type | Min words | Required sections |
+|---|---|---|
+| Affiliate/product roundup | 1,200 | Intro story, product picks with pros/cons, comparison table, tips/troubleshooting, FAQ, app CTA |
+| How-to / educational | 1,000 | Intro hook, body sections with H2/H3, pro tips callouts, bottom line, app CTA |
+| App comparison (listicle) | 1,400 | Intro, criteria section, 5–7 apps reviewed, comparison table, verdict, FAQ, app CTA |
+
+**Money pages (articles with affiliate links) must hit 1,200+ words.** Google treats sub-1,000-word affiliate articles as thin content and will not rank them for commercial queries. Every product recommendation needs: what it is, why it's right for THIS reader, honest cons, and a buy link. A 2-sentence blurb is not enough.
+
+**Comparison tables are required on all affiliate articles.** They trigger featured snippet eligibility and make the article scannable for readers who are ready to buy.
+
+---
+
+## Related Articles Section
+
+Every blog post automatically shows 3 related articles (same category, or recent articles as fallback) between the Author block and the footer. This is rendered server-side in `app/blog/[slug]/page.tsx` using `getAllPosts()` — no markdown changes needed. New articles appear in related sections automatically once published.
+
+---
+
+## GA4 Conversion Tracking (User dashboard task — not code)
+
+The code already fires `app_store_click` and `affiliate_click` events on every click. To see them as conversions in GA4:
+> GA4 → Admin → Events → find `app_store_click` → toggle "Mark as conversion" ON
+> Repeat for `affiliate_click`
+
+Without this dashboard step, the events fire but won't appear in conversion reports.
 
 ## CRITICAL: Always add this disclaimer at the end of every blog post
 
@@ -199,7 +245,10 @@ All of the following is already implemented and working as of May 2026:
 - **Sitemap:** Auto-generated at `https://mommyslog.com/sitemap.xml` — scans `content/blog/` automatically. Every new `.md` file is picked up without code changes.
 - **Robots.txt:** Live at `https://mommyslog.com/robots.txt`
 - **Canonical URLs:** Set on every page and blog post
-- **JSON-LD structured data:** Article schema + BreadcrumbList on every blog post. Organization schema in root layout.
+- **JSON-LD structured data:** Article schema + BreadcrumbList on every blog post. Organization + WebSite + SearchAction schema in root layout. SoftwareApplication schema on homepage. FAQPage schema on 5 articles with Q&A sections.
+- **`dateModified` auto-derived from git:** `lib/blog.ts` runs `git log -1` per file — no manual `updated` field needed. Just commit changes.
+- **Reading progress bar:** Live on every article page (`ReadingProgress` client component in `app/blog/[slug]/`).
+- **Staggered card animations:** Blog listing uses `animate-fade-in-up` with per-card delay for smooth entrance.
 - **Open Graph + Twitter cards:** On all pages with image dimensions declared
 - **Keywords per article:** Every article has a `keywords` array in frontmatter parsed by `lib/blog.ts`
 

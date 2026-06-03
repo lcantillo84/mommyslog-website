@@ -5,8 +5,17 @@ date: "2025-11-20"
 readTime: "8 min read"
 category: "Baby Care"
 featured: false
-image: "https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?w=1200&h=600&fit=crop&q=80"
+image: "https://images.unsplash.com/photo-1604917621956-10dfa7cce2e7?w=1200&h=600&fit=crop&q=80"
 keywords: ["newborn diaper guide", "how many diapers newborn per day", "normal newborn diapers", "newborn wet diapers per day", "newborn dirty diaper count", "newborn diaper output"]
+faqs:
+  - question: "How often should I change my newborn's diaper?"
+    answer: "Change wet diapers every 2-3 hours and dirty diapers as soon as you notice them. Newborns typically need 10-12 diaper changes per day."
+  - question: "Is green poop normal in newborns?"
+    answer: "Usually yes. Green poop can result from foremilk and hindmilk imbalance, iron in formula, or a stomach bug. Occasional green poop is fine. Consistent bright green frothy poop may need attention from your pediatrician."
+  - question: "Why does my baby strain so much when pooping?"
+    answer: "Newborns often grunt, strain, and turn red while pooping even with soft stool. Their abdominal muscles are weak and they are learning to coordinate everything. This is normal as long as the poop is soft."
+  - question: "Is it normal for my baby to poop during every feeding?"
+    answer: "Totally normal. The gastrocolic reflex makes babies poop when their stomach fills. This is especially common in breastfed newborns and usually decreases around 6-8 weeks."
 ---
 
 One of the most common questions new parents have is: "Is this diaper normal?" You're not alone—most of us spend more time analyzing baby poop than we ever imagined.
@@ -142,6 +151,8 @@ In the sleep-deprived newborn days, it's easy to lose track. Did she poop this m
 - **Answer doctor questions**: "How many wet diapers yesterday?"
 - **Reduce anxiety**: Data beats worried guessing
 
+[Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) logs wet and dirty diapers in one tap with automatic timestamps — free, no account, everything stays on your phone.
+
 ## Quick Reference Chart
 
 **Breastfed Baby (After Day 5):**
@@ -162,7 +173,7 @@ Don't stress about every diaper—but do pay attention to the overall pattern. A
 
 ## Stop Counting in Your Head — Log It Instead
 
-One tap in [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) logs a wet or dirty diaper with a timestamp. At your next pediatrician visit you'll have the exact numbers — no guessing. Free, no account, everything stays on your phone. See our [full comparison of diaper tracker apps →](/blog/best-baby-diaper-tracker-apps-2026)
+One tap in [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) logs a wet or dirty diaper with a timestamp. At your next pediatrician visit you'll have the exact numbers — no guessing. Free, no account, everything stays on your phone. See the [full comparison of diaper tracker apps →](/blog/best-baby-diaper-tracker-apps-2026) and [best free baby feeding tracker apps →](/blog/best-baby-feeding-tracker-apps-2025) for the complete picture.
 
 ---
 

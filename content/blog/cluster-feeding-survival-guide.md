@@ -6,7 +6,7 @@ readTime: "9 min read"
 category: "Breastfeeding"
 featured: false
 affiliate: false
-image: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=1200&h=600&fit=crop&q=80"
+image: "https://images.unsplash.com/photo-1604917621956-10dfa7cce2e7?w=1200&h=600&fit=crop&q=80"
 keywords: ["cluster feeding", "what is cluster feeding", "cluster feeding newborn", "baby cluster feeding evening", "how to survive cluster feeding", "breastfeeding cluster feeding", "cluster feeding growth spurt"]
 ---
 
@@ -155,7 +155,7 @@ Mommy's Log logs feedings in two taps and shows you your history at a glance —
 
 [Download free on the App Store →](https://apps.apple.com/us/app/mommys-log/id6755473620)
 
-New to breastfeeding? Our [15 Breastfeeding Tips for First-Time Moms →](/blog/breastfeeding-tips-first-time-moms) covers everything from latch to supply.
+New to breastfeeding? Our [15 Breastfeeding Tips for First-Time Moms →](/blog/breastfeeding-tips-first-time-moms) covers everything from latch to supply. See how Mommy's Log ranked in our [best free baby feeding tracker apps roundup →](/blog/best-baby-feeding-tracker-apps-2025).
 
 ---
 

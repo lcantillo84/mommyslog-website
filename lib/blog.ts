@@ -1,8 +1,14 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import { execSync } from 'child_process';
 
 const postsDirectory = path.join(process.cwd(), 'content/blog');
+
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
 
 export interface BlogPost {
   slug: string;
@@ -16,7 +22,24 @@ export interface BlogPost {
   affiliate?: boolean;
   image?: string;
   keywords?: string[];
+  faqs?: FaqItem[];
   content: string;
+}
+
+// Derives last-modified date from git history automatically.
+// Zero manual work — just commit changes and dateModified updates itself.
+function getGitLastModified(filePath: string): string | undefined {
+  try {
+    const result = execSync(`git log -1 --format=%ci -- "${filePath}"`, {
+      cwd: process.cwd(),
+      stdio: ['pipe', 'pipe', 'pipe'],
+    })
+      .toString()
+      .trim();
+    return result ? result.split(' ')[0] : undefined;
+  } catch {
+    return undefined;
+  }
 }
 
 export function getAllPosts(): BlogPost[] {
@@ -35,17 +58,18 @@ export function getAllPosts(): BlogPost[] {
         title: data.title,
         description: data.description,
         date: data.date,
-        updated: data.updated || undefined,
+        updated: getGitLastModified(fullPath) || data.updated || undefined,
         readTime: data.readTime,
         category: data.category,
         featured: data.featured || false,
         affiliate: data.affiliate || false,
         image: data.image || null,
         keywords: data.keywords || undefined,
+        faqs: data.faqs || undefined,
         content,
       };
     })
-    .sort((a, b) => (new Date(b.date).getTime() - new Date(a.date).getTime()));
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return posts;
 }
@@ -61,13 +85,14 @@ export function getPostBySlug(slug: string): BlogPost | null {
       title: data.title,
       description: data.description,
       date: data.date,
-      updated: data.updated || undefined,
+      updated: getGitLastModified(fullPath) || data.updated || undefined,
       readTime: data.readTime,
       category: data.category,
       featured: data.featured || false,
       affiliate: data.affiliate || false,
       image: data.image || undefined,
       keywords: data.keywords || undefined,
+      faqs: data.faqs || undefined,
       content,
     };
   } catch {
