@@ -32,7 +32,7 @@ The only way to know that number is to have logged it.
 
 > **Pro Tip:** Before any well-baby appointment, open your tracking history and look at the last 3 days. You'll walk in prepared — and that's a genuinely useful conversation instead of a shrug-and-guess one.
 
-Wet and dirty diapers are the second piece of the puzzle. They're the clearest sign that milk is being transferred and digested. By day 4, most newborns should have 4+ wet diapers daily. Your doctor will ask. You want to have an answer.
+[Wet and dirty diapers](/blog/newborn-diaper-guide-what-is-normal) are the second piece of the puzzle. They're the clearest sign that milk is being transferred and digested. By day 4, most newborns should have 4+ wet diapers daily. Your doctor will ask. You want to have an answer.
 
 ## The 4 Things Worth Logging (Everything Else Is Noise)
 
@@ -57,7 +57,7 @@ Sleep deprivation is cumulative. By week two of waking every 2-3 hours, your sho
 
 Here's the thing about newborn feeding patterns: **they're only visible in aggregate**. In the fog of individual feeds, everything feels random. Baby is always hungry. Baby is never satisfied. Baby wants to eat constantly for three hours and then disappears for four.
 
-When you look at a week of logged data, the pattern appears. That "constant feeding" stretch was cluster feeding before a growth spurt. That four-hour gap happened twice, both times on afternoons when she had a longer nap. The randomness starts to make sense.
+When you look at a week of logged data, the pattern appears. That "constant feeding" stretch was [cluster feeding](/blog/cluster-feeding-survival-guide) before a growth spurt. That four-hour gap happened twice, both times on afternoons when she had a longer nap. The randomness starts to make sense.
 
 Without a log, all you have is anxiety. With one, you have context.
 

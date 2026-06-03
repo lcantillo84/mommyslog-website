@@ -113,7 +113,7 @@ A simple test: stand at the door of the room with it running. If you can hear it
 
 ## Sleep Regressions and White Noise
 
-White noise doesn't prevent the 4-month sleep regression — nothing does, because it's developmental. What it does is help babies who stir between sleep cycles resettle faster on their own.
+White noise doesn't prevent the [4-month sleep regression](/blog/baby-wake-windows-by-age) — nothing does, because it's developmental. What it does is help babies who stir between sleep cycles resettle faster on their own.
 
 Here's the mechanism: at 4 months, baby's sleep architecture matures to include lighter sleep cycles similar to adults. They naturally stir or partially wake between cycles. In a completely quiet room, that partial waking can become a full waking because there's no sensory signal saying *you're still in your sleep environment.* White noise provides that consistent anchor — it tells their nervous system *nothing has changed, keep sleeping.*
 

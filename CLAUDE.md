@@ -112,8 +112,34 @@ Spa-calm wellness. Clean, soft, gender-neutral. Designed for tired moms — noth
 ## Links
 
 - All external links: `target="_blank" rel="noopener noreferrer"`
-- Amazon affiliate links: use `amzn.to` short format (user provides these — never guess Amazon URLs)
 - The `<a>` component in ReactMarkdown is already configured to open links in new tabs
+
+## Amazon Affiliate Links
+
+**Affiliate tag:** `mommyslog1-20`
+
+**Two valid formats — both earn commission:**
+
+1. **Short link** (`amzn.to`): Created in Amazon Associates dashboard. Tag is embedded inside the short link and verified. Use this format when the user has already generated it.
+   ```
+   https://amzn.to/XXXXXXX
+   ```
+
+2. **Long link** (`amazon.com` with tag): Use this format when the user provides a product ASIN or URL and you need to build the affiliate link.
+   ```
+   https://www.amazon.com/dp/[ASIN]?tag=mommyslog1-20
+   ```
+   If the URL already has parameters, append with `&tag=mommyslog1-20` instead of `?`.
+
+**What I can do:**
+- Add `?tag=mommyslog1-20` to any Amazon URL the user provides
+- Verify any link with `curl -sL -o /dev/null -w "%{url_effective}" URL | tr '&' '\n' | grep "^tag="` — confirmed method
+- Build long-format links from an ASIN the user gives me
+
+**What I must NOT do:**
+- Guess or invent Amazon product URLs or ASINs
+- Use any tag other than `mommyslog1-20`
+- Remove or replace existing affiliate links without being asked
 
 ---
 
@@ -291,13 +317,21 @@ All of the following is already implemented and working as of May 2026:
 - Never use `#` as a placeholder link — always use the real URL
 - Cross-link between articles — especially link TO `best-baby-feeding-tracker-apps-2025` from new articles (it's the top performer)
 
+### Natural internal linking rule (learned June 2026)
+Links inside article body text must feel like a natural reading flow — not promotional call-outs. The pattern:
+- **Good:** "That stretch was [cluster feeding](/blog/cluster-feeding-survival-guide) before a growth spurt." — linked inline within a sentence
+- **Good:** "[Wet and dirty diapers](/blog/newborn-diaper-guide-what-is-normal) are the clearest sign milk is being transferred." — phrase linked naturally
+- **Bad:** "➡️ See our FULL GUIDE on cluster feeding here!" — pushy, feels like an ad
+- Max 2–3 body-text contextual links per article beyond the app CTA links
+- Link when a topic is mentioned that has its own dedicated article — don't force it
+
 ---
 
 ## Article Pipeline — Agreed and Queued
 
 Articles to write next, in order (agreed with user):
-1. **Baby wake windows by age (0–6 months)** — Category: Baby Sleep. When to put baby down based on awake time. Massive search volume, different from white noise machines article.
-2. **Newborn weight gain week by week** — Category: Baby Care. What's normal, what doctors check, ties into feeding/diaper tracking logs.
+1. **Baby feeding schedule by age (0–12 months)** — Category: New Parents. How often to feed, how long sessions last, hunger cues by age. Target keywords: "baby feeding schedule", "how often to feed newborn", "feeding schedule by age". High search volume, zero overlap with wake windows (that's sleep, this is feeding). Direct tie to app tracking. Write this next.
+2. Consider after: "when to stop tracking baby feedings" — low competition, high intent from parents who are already using a tracker
 
 Do not suggest other topics first — write these in order when asked for the next article.
 

@@ -66,7 +66,7 @@ This is where a lot of parents spiral — because a baby who won't stop fussing 
 Signs it's cluster feeding:
 
 - **Pattern is predictable.** It happens around the same time of day, especially evenings.
-- **Baby has plenty of wet and dirty diapers overall.** Output doesn't drop during a cluster.
+- **Baby has plenty of [wet and dirty diapers](/blog/newborn-diaper-guide-what-is-normal) overall.** Output doesn't drop during a cluster.
 - **Baby has at least some calm stretches.** They're not inconsolable 24 hours a day.
 - **Baby is gaining weight appropriately.** Confirmed at pediatrician visits.
 - **You know a growth spurt is likely.** It lines up with the typical windows above.

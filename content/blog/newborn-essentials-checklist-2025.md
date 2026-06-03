@@ -23,13 +23,13 @@ So let me save you from that. Here's the real list — the things that actually 
 ## 🍼 Feeding Essentials
 
 **[Boppy Nursing Pillow](https://www.amazon.com/dp/B00B0AJHK4?tag=mommyslog1-20)**
-Hermana, your arms will be dead tired by feeding number three. This pillow keeps baby at the right height so you're not hunching over like a sad little turtle. It later doubles as tummy time support. Just get it.
+Hermana, your arms will be dead tired by feeding number three. This pillow keeps baby at the right height so you're not hunching over like a sad little turtle. It later doubles as tummy time support. Just get it. (If you're deciding between the Boppy and My Brest Friend, we broke down both in our [nursing pillow guide →](/blog/best-nursing-pillows-for-breastfeeding).)
 
 **[Haakaa Silicone Breast Pump](https://www.amazon.com/dp/B07FMZR2KT?tag=mommyslog1-20)**
 Thirteen dollars. THIRTEEN. You attach this to the side you're not nursing from and it silently collects all that milk that would've just leaked into a pad. Most moms get 1–3 oz per session without doing anything extra. It's basically free milk, sis.
 
 **[Dr. Brown's Anti-Colic Bottles](https://www.amazon.com/dp/B001UE8AEY?tag=mommyslog1-20)**
-Even if you plan to exclusively breastfeed — have a few of these ready. The internal vent removes air so baby has way less gas and spit-up. Pediatricians have been recommending them for 25 years. Yes there are more parts to wash. Still worth it.
+Even if you plan to exclusively breastfeed — have a few of these ready. The internal vent removes air so baby has way less gas and spit-up. Pediatricians have been recommending them for 25 years. Yes there are more parts to wash. Still worth it. If baby refuses the bottle entirely, our [guide to the best bottles for breastfed babies →](/blog/best-baby-bottles-for-breastfed-babies) covers exactly what to try next.
 
 **[Lansinoh Nursing Pads](https://www.amazon.com/dp/B0009ET2WE?tag=mommyslog1-20)** + **[Lanolin Cream](https://www.amazon.com/dp/B00007IVBW?tag=mommyslog1-20)**
 You will leak in public. You will be sore those first two weeks. These two things will get you through it, hermana. Both go in the hospital bag. Non-negotiable.
@@ -58,7 +58,7 @@ Keep this one on backup for when a rash actually shows up. The high-zinc formula
 This swivels right to your bed so you can reach baby without sitting all the way up for every night feed. After a C-section or a hard delivery, that one feature alone is worth the whole price. Hermana, your body will thank you.
 
 **[Hatch Rest Sound Machine](https://www.amazon.com/dp/B07MV1HQ2H?tag=mommyslog1-20)**
-App-controlled white noise + night light. You change the volume from your phone without creeping into the nursery and waking baby up. It later becomes a toddler ok-to-wake clock. One device from newborn to preschool. Worth every single penny.
+App-controlled white noise + night light. You change the volume from your phone without creeping into the nursery and waking baby up. It later becomes a toddler ok-to-wake clock. One device from newborn to preschool. Worth every single penny. We compared all four top options in the [best white noise machines guide →](/blog/best-white-noise-machines-for-babies) if you want the full breakdown before deciding.
 
 **[Love to Dream Swaddle UP](https://www.amazon.com/dp/B01BXBGD6I?tag=mommyslog1-20)**
 Arms-up style swaddle. Sounds weird. Babies are OBSESSED. So many moms I know had a baby who wouldn't sleep until they tried this one. Try it before you commit to a traditional swaddle.
