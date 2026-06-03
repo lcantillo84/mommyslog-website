@@ -1,32 +1,30 @@
 import { MetadataRoute } from 'next'
-import fs from 'fs'
-import path from 'path'
+import { getAllPosts } from '@/lib/blog'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://mommyslog.com'
 
-  // Scan content/blog directory for markdown files
-  const blogDir = path.join(process.cwd(), 'content/blog')
-  const blogPosts = fs.readdirSync(blogDir)
-    .filter(file => file.endsWith('.md'))
-    .map(file => ({
-      url: `${baseUrl}/blog/${file.replace('.md', '')}`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    }))
+  const posts = getAllPosts()
+  const blogPosts = posts.map(post => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.updated || post.date),
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  }))
+
+  const newestPost = posts[0]
 
   return [
     {
       url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: 'weekly',
+      changeFrequency: 'weekly' as const,
       priority: 1,
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      lastModified: newestPost ? new Date(newestPost.updated || newestPost.date) : new Date(),
+      changeFrequency: 'weekly' as const,
       priority: 0.9,
     },
     ...blogPosts,
