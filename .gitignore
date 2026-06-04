@@ -38,3 +38,6 @@ next-env.d.ts
 *.swp
 *.swo
 *~
+
+# Claude Code instructions (kept local only)
+CLAUDE.md
