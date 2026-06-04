@@ -5,6 +5,7 @@ description: "I've used the Nanit Pro with two babies and I'm never going back. 
 category: "Baby Gear"
 readTime: "9 min read"
 affiliate: true
+image: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=1200&h=600&fit=crop&q=80"
 keywords:
   - "best baby monitor low radiation"
   - "best baby monitors 2026"

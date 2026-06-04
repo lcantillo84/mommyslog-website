@@ -3,6 +3,7 @@ import Link from "next/link";
 import Script from "next/script";
 import { getAllPosts } from "@/lib/blog";
 import ScrollReveal from "./components/ScrollReveal";
+import AutoplayVideo from "./components/AutoplayVideo";
 
 const categoryColors: Record<string, string> = {
   "Baby Gear":     "bg-[#5BA89F]/10 text-[#3d7a72]",
@@ -107,39 +108,33 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right: photo + floating cards */}
-            <div className="flex-1 relative w-full max-w-md lg:max-w-none mx-auto animate-scale-in" style={{ animationDelay: "0.15s" }}>
-              <div className="relative rounded-[28px] overflow-hidden shadow-[0_24px_64px_rgba(91,168,159,0.20)]">
-                <Image
-                  src="https://images.unsplash.com/photo-1758024375456-014f504e88d2?w=800&h=680&fit=crop&q=80"
-                  alt="Mom tracking baby feeding with Mommy's Log app"
-                  width={800}
-                  height={680}
-                  className="w-full object-cover"
-                  priority
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-ml-text/10 to-transparent" />
-              </div>
+            {/* Right: app preview video + floating cards */}
+            <div className="flex-1 relative w-full max-w-md lg:max-w-none mx-auto animate-scale-in flex items-center justify-center" style={{ animationDelay: "0.15s" }}>
+              <div className="relative w-[240px] md:w-[280px] lg:w-[300px]">
+                <div className="rounded-[36px] overflow-hidden shadow-[0_24px_64px_rgba(91,168,159,0.25)] border-8 border-ml-text bg-ml-text">
+                  <AutoplayVideo src="/app-preview-v2.mp4" className="w-full h-auto block" />
+                </div>
 
-              {/* Floating card 1 — continuously bobs */}
-              <div className="absolute -left-5 top-8 bg-ml-card rounded-2xl shadow-[0_8px_28px_rgba(0,0,0,0.13)] px-4 py-3 flex items-center gap-3 border border-ml-teal/10 animate-slide-in-up animate-float" style={{ animationDelay: "0.35s" }}>
-                <div className="w-10 h-10 bg-ml-teal/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <span className="text-xl">🍼</span>
+                {/* Floating card 1 — continuously bobs */}
+                <div className="absolute -left-16 top-10 bg-ml-card rounded-2xl shadow-[0_8px_28px_rgba(0,0,0,0.13)] px-4 py-3 flex items-center gap-3 border border-ml-teal/10 animate-slide-in-up animate-float" style={{ animationDelay: "0.35s" }}>
+                  <div className="w-10 h-10 bg-ml-teal/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <span className="text-xl">🍼</span>
+                  </div>
+                  <div>
+                    <p className="text-xs text-ml-secondary font-semibold">Last feeding</p>
+                    <p className="text-sm font-bold text-ml-text">2h 14m ago · Left</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-xs text-ml-secondary font-semibold">Last feeding</p>
-                  <p className="text-sm font-bold text-ml-text">2h 14m ago · Left</p>
-                </div>
-              </div>
 
-              {/* Floating card 2 — bobs with offset phase */}
-              <div className="absolute -right-5 bottom-10 bg-ml-card rounded-2xl shadow-[0_8px_28px_rgba(0,0,0,0.13)] px-4 py-3 flex items-center gap-3 border border-ml-teal/10 animate-slide-in-up animate-float-alt" style={{ animationDelay: "0.5s" }}>
-                <div className="w-10 h-10 bg-ml-caramel/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <span className="text-xl">🧷</span>
-                </div>
-                <div>
-                  <p className="text-xs text-ml-secondary font-semibold">Today&apos;s diapers</p>
-                  <p className="text-sm font-bold text-ml-text">7 logged ✓</p>
+                {/* Floating card 2 — bobs with offset phase */}
+                <div className="absolute -right-16 bottom-12 bg-ml-card rounded-2xl shadow-[0_8px_28px_rgba(0,0,0,0.13)] px-4 py-3 flex items-center gap-3 border border-ml-teal/10 animate-slide-in-up animate-float-alt" style={{ animationDelay: "0.5s" }}>
+                  <div className="w-10 h-10 bg-ml-caramel/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <span className="text-xl">🧷</span>
+                  </div>
+                  <div>
+                    <p className="text-xs text-ml-secondary font-semibold">Today&apos;s diapers</p>
+                    <p className="text-sm font-bold text-ml-text">7 logged ✓</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -243,16 +238,17 @@ export default function Home() {
             <p className="text-xl text-ml-secondary">Designed to work when you&apos;re half asleep.</p>
           </ScrollReveal>
 
-          <div className="flex md:grid md:grid-cols-4 gap-6 overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
+          <div className="flex md:grid md:grid-cols-5 gap-6 items-end overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
             {[
-              { src: "/main-feedingpage.PNG", alt: "Mommy's Log - Main Feeding Page" },
-              { src: "/feeding.PNG", alt: "Mommy's Log - Feeding Tracker", offset: true },
-              { src: "/History.PNG", alt: "Mommy's Log - History View" },
-              { src: "/settings.PNG", alt: "Mommy's Log - Settings" },
-            ].map(({ src, alt, offset }, i) => (
-              <ScrollReveal key={src} direction="pop" delay={i * 80} className={`snap-center shrink-0 w-[260px] md:w-auto${offset ? " md:-mt-8" : ""}`}>
+              { src: "/01-log-feedings.jpg", alt: "Mommy's Log - Log Feedings" },
+              { src: "/02-track-diaper.jpg", alt: "Mommy's Log - Track Diapers" },
+              { src: "/03-review-history.jpg", alt: "Mommy's Log - Review History" },
+              { src: "/04-sync-partner.jpg", alt: "Mommy's Log - Sync with Partner" },
+              { src: "/05-see-patterns.jpg", alt: "Mommy's Log - See Patterns" },
+            ].map(({ src, alt }, i) => (
+              <ScrollReveal key={src} direction="pop" delay={i * 80} className="snap-center shrink-0 w-[260px] md:w-auto">
                 <div className="rounded-3xl overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.12)] border-8 border-ml-text bg-ml-text transform hover:scale-105 hover:shadow-[0_20px_48px_rgba(0,0,0,0.20)] transition-all duration-300">
-                  <Image src={src} alt={alt} width={414} height={896} className="w-full h-auto" priority={src.includes("main")} />
+                  <Image src={src} alt={alt} width={414} height={896} className="w-full h-auto" priority={i === 0} />
                 </div>
               </ScrollReveal>
             ))}

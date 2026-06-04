@@ -33,7 +33,7 @@ export default function BlogPage() {
 
   return (
     <main className="min-h-screen bg-ml-cream">
-      {/* Hero Section */}
+      {/* Hero Section */} lil
       <section className="bg-ml-cream border-b border-ml-teal/10">
         <div className="max-w-6xl mx-auto px-4 py-16 md:py-24">
           <Link
