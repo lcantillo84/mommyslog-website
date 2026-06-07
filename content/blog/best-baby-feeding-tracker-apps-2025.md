@@ -121,6 +121,110 @@ This is the only app I tested that truly respects your privacy. In an age where 
 
 [Download Mommy's Log free on the App Store →](https://apps.apple.com/us/app/mommys-log/id6755473620)
 
+## #2. Huckleberry — Best for Sleep + Feeding Together
+
+⭐⭐⭐⭐½ **Rating: 4.5/5**
+
+**Price:** Free tier available, premium ~$9.99/month
+**Best For:** Parents who want feeding and sleep tracking in one place
+
+Huckleberry is one of the most downloaded baby apps and its feeding tracker is genuinely solid — log breastfeeding, bottles, and formula with timestamps and durations. The real advantage is seeing how feeding timing connects to nap length. If you're trying to understand patterns across feeding and sleep together, this is the app for it.
+
+The honest limitation: the features parents love most (SweetSpot sleep prediction, detailed history reports) are behind the paywall. For feeding tracking specifically, the free tier is functional.
+
+**Best for:** Parents who want feeding AND sleep patterns in one view and don't mind a subscription.
+
+---
+
+## #3. Baby Tracker by Amila — Best Free Android Option
+
+⭐⭐⭐⭐ **Rating: 4.2/5**
+
+**Price:** Free with ads, ~$2.99/month to remove
+**Best For:** Android users, or mixed iPhone/Android households
+
+Baby Tracker by Amila is one of the most downloaded baby logging apps on both platforms — and the cross-platform support is rare in this category. iOS and Android users can use it together, which matters if you and your partner have different phones.
+
+The free tier covers feeding, diapers, sleep, and growth. The ads are present but not aggressive. If you need Android, this is the most reliable free option.
+
+**Best for:** Android users or families where one parent has iPhone and the other has Android.
+
+---
+
+## #4. Glow Baby — Most Feature-Rich Free Tier
+
+⭐⭐⭐⭐ **Rating: 4.0/5**
+
+**Price:** Free with ads, premium upgrade available
+**Best For:** Parents who want the most features without paying
+
+Glow Baby packs a lot into its free tier — feeding, diapers, sleep, growth, milestone tracking, and a community forum where you can connect with other parents at the same stage. For sheer feature count, nothing in the free tier matches it.
+
+Privacy note: Glow is ad-supported, which means data is being used to serve those ads. If on-device privacy matters to you, it isn't the right pick. If you want features and aren't worried about data, Glow Baby delivers.
+
+**Best for:** Feature-hunters who don't mind ads.
+
+---
+
+## #5. Sprout Baby — Best One-Time Purchase
+
+⭐⭐⭐⭐ **Rating: 4.0/5**
+
+**Price:** ~$4.99 one-time (no monthly fee, ever)
+**Best For:** Parents who hate subscriptions and prefer paying once
+
+Sprout charges once and never again — no trial expiration, no monthly bill. Feeding, diapers, sleep, and growth are all covered with a clean interface and solid data export.
+
+The downside: it feels less actively maintained than the top picks, and no partner sync without extra setup. But if a monthly fee bothers you more than a small one-time cost, Sprout is the clean alternative.
+
+**Best for:** Parents who want to pay once and be done.
+
+---
+
+## #6. Nara Baby — Most Modern Design
+
+⭐⭐⭐ **Rating: 3.5/5**
+
+**Price:** Free tier + premium
+**Best For:** Parents who want the most current-feeling interface
+
+Nara Baby is the newest entry with a genuinely modern design. The logging flow is smooth and it covers the basics well. It's improving quickly — which also means it's not yet as battle-tested as apps with years of reviews behind them.
+
+For something you're relying on at 3am with a crying baby, stability matters more than aesthetics. Nara is a solid choice if you're comfortable being an early adopter.
+
+**Best for:** Early adopters who prioritize design and modern UX.
+
+---
+
+## #7. Your Phone's Notes App — Last Resort
+
+⭐⭐⭐ **Rating: 3.0/5**
+
+**Price:** Free (already on your phone)
+**Best For:** Getting something started before you've chosen an app
+
+A timestamped note that says "9:42am — left breast, 18 min" is technically a feeding log. Zero downloads, zero learning curve, completely private.
+
+The problems are obvious: no reminders, no "which side next" indicator, no summary view, no partner sync. You'll outgrow it fast. But in the first day home when you're overwhelmed and can't evaluate apps — it works until you do.
+
+**Upgrade before week three.** The real apps are better in every way and they're free.
+
+---
+
+## App Comparison at a Glance
+
+| App | Free? | Ads? | iOS/Android | Partner Sync | Best For |
+|---|---|---|---|---|---|
+| **Mommy's Log** | ✅ Core free | ❌ None | iOS only | ✅ $2.99/mo | Privacy + simplicity |
+| Huckleberry | ⚠️ Limited | ❌ None | Both | ✅ Paid | Sleep + feeding combo |
+| Baby Tracker (Amila) | ✅ Free tier | ⚠️ Yes | Both | ✅ Paid | Android users |
+| Glow Baby | ✅ Free tier | ⚠️ Yes | Both | ✅ Paid | Most features free |
+| Sprout Baby | 💵 $4.99 once | ❌ None | Both | ❌ No | No subscription |
+| Nara Baby | ⚠️ Limited | ❌ None | Both | ✅ Paid | Modern design |
+| Notes App | ✅ Basic | ❌ None | Both | ❌ No | Week 1 emergency |
+
+---
+
 ## Common Baby Feeding Questions
 
 ### How often should I feed my newborn?

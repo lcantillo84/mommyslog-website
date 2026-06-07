@@ -7,6 +7,17 @@ category: "Breastfeeding"
 featured: false
 image: "https://images.unsplash.com/photo-1567201719502-255e0b3c683a?w=1200&h=600&fit=crop&q=80"
 keywords: ["breastfeeding tips first time mom", "how to breastfeed newborn", "breastfeeding advice new mom", "newborn breastfeeding help", "breastfeeding problems solutions", "breastfeeding tips beginner"]
+faqs:
+  - question: "How long does it take to get used to breastfeeding?"
+    answer: "Most mothers find breastfeeding starts to feel natural between 4 and 6 weeks. The early weeks involve a real learning curve for both you and your baby. If you are still struggling at week three, a lactation consultant can identify and fix specific issues — many insurance plans cover this."
+  - question: "What are the early signs my baby is hungry?"
+    answer: "Early hunger cues include rooting (turning the head and opening the mouth), sucking on hands, and smacking lips. Crying is a late hunger sign. Feeding at early cues makes latching easier for everyone and reduces the chance of an upset, hard-to-latch baby."
+  - question: "How do I know if my baby is getting enough breast milk?"
+    answer: "The most reliable signs are 6 or more wet diapers per day after day 4, appropriate weight gain confirmed by your pediatrician, and a baby who seems satisfied after feedings. Tracking feedings and diapers helps you spot any shortfall early and gives your doctor real data to work with."
+  - question: "Is breastfeeding supposed to hurt?"
+    answer: "Some initial tenderness in the first few days is common as your nipples adjust. Sharp or persistent pain throughout a feeding usually means the latch needs adjusting. Pain that continues past week one should be evaluated by a lactation consultant — it is almost always fixable."
+  - question: "What should I do if my milk supply seems low?"
+    answer: "Feed or pump more frequently — milk production is supply and demand, and more stimulation means more milk. Make sure you are drinking enough water and eating enough calories. If you are worried, a lactation consultant can assess whether supply is actually low or baby is simply going through a growth spurt."
 ---
 
 Breastfeeding is one of the most natural things in the world—and also one of the hardest to learn. If you're a first-time mom feeling overwhelmed, you're not alone. Most of us struggled in the beginning.

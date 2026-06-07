@@ -8,6 +8,15 @@ featured: false
 affiliate: true
 image: "https://images.unsplash.com/photo-1669810432286-358c5622668e?w=1200&h=600&fit=crop&q=80"
 keywords: ["best nursing pillow for breastfeeding", "nursing pillow breastfeeding", "boppy vs my brest friend", "best nursing pillow 2026", "breastfeeding pillow newborn", "nursing pillow for newborn"]
+faqs:
+  - question: "What is the best nursing pillow for breastfeeding?"
+    answer: "My Brest Friend is the top choice for mothers with latch challenges or who need reliable hands-free support — it buckles around your waist and stays in place. The Boppy is better if you want a multi-use pillow that also works for tummy time and supported sitting as baby grows."
+  - question: "Boppy vs My Brest Friend — which one should I get?"
+    answer: "Choose My Brest Friend if you are struggling with positioning or need both hands free consistently — lactation consultants recommend it for a reason. Choose the Boppy if you want a product with a longer useful life beyond nursing. Many moms end up with both for different purposes."
+  - question: "Do I really need a nursing pillow?"
+    answer: "You do not need one, but most breastfeeding mothers find one significantly reduces arm, shoulder, and neck fatigue during long feeding sessions. A good nursing pillow brings baby up to breast height so you are not hunching for 30 to 45 minutes at a time, up to 12 times per day."
+  - question: "When should I start using a nursing pillow?"
+    answer: "From the very first feeding if you want to. Many mothers use a nursing pillow in the hospital. There is no minimum age — it is a positioning tool, not something baby outgrows on a schedule."
 ---
 
 Nobody warns you about the arm thing.

@@ -7,6 +7,17 @@ category: "New Parents"
 featured: false
 image: "https://images.unsplash.com/photo-1632052999447-e542d08d4f7d?w=1200&h=600&fit=crop&q=80"
 keywords: ["first pediatrician visit newborn", "baby first doctor visit", "newborn well baby visit", "what to expect newborn doctor appointment", "pediatrician visit checklist newborn"]
+faqs:
+  - question: "When is the first pediatrician visit after birth?"
+    answer: "Most pediatricians want to see newborns within 24 to 48 hours of hospital discharge, or 48 to 72 hours for C-section births. Babies with jaundice or feeding concerns are often seen sooner. Your discharge nurse will usually schedule this before you leave the hospital."
+  - question: "What happens at a newborn's first doctor visit?"
+    answer: "The doctor will weigh your baby naked and compare to birth weight, perform a full physical exam from head to toe, and ask about feeding frequency and diaper output. It is also your opportunity to ask every question you have been holding since the hospital."
+  - question: "How much weight can a newborn lose before the first visit?"
+    answer: "It is normal for newborns to lose 5 to 10 percent of birth weight in the first few days. Most babies return to birth weight by 10 to 14 days. Your pediatrician tracks this trend at every visit in the first weeks — consistent gain matters more than any single number."
+  - question: "What should I bring to my baby's first pediatrician appointment?"
+    answer: "Bring your insurance cards, hospital discharge paperwork, a list of questions you have written down, your feeding and diaper log or tracking app, and a fully stocked diaper bag. Feed baby right before you leave — a full baby is easier to examine than a hungry one."
+  - question: "What questions should I ask at the first pediatrician visit?"
+    answer: "Ask about feeding frequency and amounts, what normal diaper output looks like, what fever threshold to watch for, when to call versus go to urgent care, and what the vaccine schedule looks like. Write questions down beforehand — sleep deprivation makes memory unreliable in the office."
 ---
 
 Your baby's first pediatrician visit usually happens within 2-3 days of leaving the hospital. If you're feeling nervous, that's completely normal. Here's everything you need to know to walk in prepared and confident.
@@ -198,4 +209,4 @@ One thing that will make every visit easier: a feeding and diaper log. Pediatric
 
 ---
 
-*This article is for informational purposes only and does not replace professional medical advice. Always follow your pediatrician's specific guidance for your baby.*
+*Disclaimer: This article is for informational purposes only and does not replace medical advice. If you have concerns about your newborn's health or development, please consult with your healthcare provider.*

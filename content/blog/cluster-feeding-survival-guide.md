@@ -8,6 +8,17 @@ featured: false
 affiliate: false
 image: "https://images.unsplash.com/photo-1604917621956-10dfa7cce2e7?w=1200&h=600&fit=crop&q=80"
 keywords: ["cluster feeding", "what is cluster feeding", "cluster feeding newborn", "baby cluster feeding evening", "how to survive cluster feeding", "breastfeeding cluster feeding", "cluster feeding growth spurt"]
+faqs:
+  - question: "What is cluster feeding?"
+    answer: "Cluster feeding is when a baby feeds in short, frequent bursts over several hours — often every 20 to 45 minutes. It typically happens in the evenings and is not a sign that your milk supply is low. It is a normal demand signal that tells your body to produce more milk."
+  - question: "How long does cluster feeding last?"
+    answer: "Cluster feeding tied to a growth spurt typically resolves in 2 to 4 days as milk supply adjusts. Evening witching-hour clusters usually become less intense around 6 to 8 weeks as baby's digestive system matures. By 3 to 4 months, most babies are past the most intense cluster feeding periods."
+  - question: "Does cluster feeding mean my baby is not getting enough milk?"
+    answer: "No. The clearest sign that baby is getting enough milk is diaper output — 6 or more wet diapers per day after day 4. Cluster feeding is a demand signal, not evidence of insufficient supply. If you are concerned, your pediatrician can confirm weight gain is on track."
+  - question: "What time of day does cluster feeding usually happen?"
+    answer: "Most commonly in the evenings, between approximately 5pm and 10pm. This is often called the witching hour. Theories include slightly lower fat content in evening breast milk, babies processing the day's stimulation through closeness, and catching up on calories after lighter daytime feeds."
+  - question: "How do I get through cluster feeding?"
+    answer: "Set up your nursing station before the cluster starts — fill a water bottle, put snacks within reach, plug in your phone, and tell your partner what you need. Rotate nursing positions to avoid soreness. Let your partner handle everything else. Know that it ends, usually within a few days or by 6 to 8 weeks."
 ---
 
 It's 6pm. Your baby has been feeding — or trying to feed — almost constantly for the past two hours. You've switched sides three times. They pull off, fuss, root, latch again. Pull off, fuss, root, latch again.

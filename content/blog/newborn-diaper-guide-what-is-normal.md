@@ -177,4 +177,4 @@ One tap in [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) 
 
 ---
 
-*This article is for informational purposes only. Always consult your pediatrician with specific concerns about your baby's health.*
+*Disclaimer: This article is for informational purposes only and does not replace medical advice. If you have concerns about your newborn's diaper output or health, please consult with your healthcare provider.*

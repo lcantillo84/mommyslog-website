@@ -8,6 +8,17 @@ featured: false
 affiliate: true
 image: "https://images.unsplash.com/photo-1776741147119-386faf386796?w=1200&h=600&fit=crop&q=80"
 keywords: ["newborn essentials checklist", "newborn baby checklist", "what to buy for newborn", "newborn must haves", "baby registry checklist", "newborn baby essentials list"]
+faqs:
+  - question: "What are the absolute must-haves for a newborn?"
+    answer: "The true essentials are: a safe sleep surface (bassinet or crib with firm mattress), diapers and wipes, a few onesies, a car seat (required before leaving the hospital), and a way to feed your baby. Everything else is helpful but optional. Start with these and add items as you learn what your baby actually needs."
+  - question: "How much should I spend on newborn essentials?"
+    answer: "You don't need to spend a lot. The most-used items are diapers, wipes, a few sleepers, and feeding supplies. Expensive gear like swings, wipe warmers, and specialized baby food makers often go unused. Start minimal and buy more once you know what your baby actually needs."
+  - question: "What newborn items do most parents regret buying?"
+    answer: "The most commonly regretted purchases are wipe warmers (bacteria risk, not necessary), newborn shoes (pointless before walking), diaper Genie (regular trash bags work fine), and specialized baby food makers (a regular blender does the same thing). Buy less, not more, until you know your baby."
+  - question: "How many newborn diapers do I need before baby arrives?"
+    answer: "Don't overstock newborn size — some babies skip straight to Size 1. Buy 1-2 packs of newborn diapers and have a full case of Size 1 ready. You can always buy more but can't return opened boxes."
+  - question: "Do I need a baby monitor for a newborn?"
+    answer: "For most families sharing a small home or apartment, a monitor isn't necessary in the early weeks — you'll hear everything. For larger homes or parents who need peace of mind, an audio or video monitor is worth it. Skip features like movement sensors and breathing monitors unless your pediatrician recommends them for a specific health reason."
 ---
 
 *This post has Amazon affiliate links — if you buy through them I get a small commission at no extra cost to you. I only share what I'd actually tell my hermana (that means sister!) to buy.*
@@ -102,6 +113,58 @@ Hermana, you will not remember when baby last ate. You will not remember which s
 - **Diaper Genie** — regular trash + regular bags works fine
 - **Newborn shoes** — adorable, completely pointless
 - **Baby food maker** — your regular blender does the same thing
+
+---
+
+## What to Buy First vs. What Can Wait
+
+Not everything needs to be ready on day one. Here's how to prioritize:
+
+**Buy before baby arrives:**
+- Car seat (legally required to leave the hospital)
+- Bassinet or safe sleep surface
+- 5–7 onesies and sleepers (newborn + Size 1)
+- Diapers (small stock of newborn, larger stock of Size 1)
+- Wipes (2–3 packs)
+- Feeding supplies (nursing pillow, bottles if bottle-feeding, formula if using)
+- Lanolin cream and nursing pads if breastfeeding
+
+**Can wait until after baby is born:**
+- Swing (some babies love them, some don't — borrow one first if possible)
+- White noise machine (your phone works fine to start)
+- Baby carrier (fit matters — easier to try in person once baby is here)
+- Baby monitor (you'll hear everything in the first weeks regardless)
+
+**Almost never need:**
+- Wipe warmer
+- Newborn shoes
+- Diaper Genie
+- Dedicated baby food maker
+- Anything labeled "newborn" that only works for 4–6 weeks
+
+---
+
+## Frequently Asked Questions
+
+### What are the absolute must-haves for a newborn?
+
+The true essentials: a safe sleep surface, diapers and wipes, a few onesies, a car seat, and a way to feed your baby. A feeding and diaper tracker app like [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) rounds it out — free, no ads, and your pediatrician will thank you.
+
+### How many newborn diapers do I need before baby arrives?
+
+Buy 1–2 packs of newborn size and a full case of Size 1. Some babies skip newborn size entirely. You can always buy more — you can't return opened boxes.
+
+### What do most parents regret buying?
+
+Wipe warmers (bacteria risk), newborn shoes (pointless), Diaper Genie (regular trash bags work fine), and baby food makers (a regular blender does the same thing).
+
+### Do I need a special monitor?
+
+For small homes, you'll hear everything without one. For larger homes, a basic audio or video monitor works well. Skip breathing sensors and movement pads unless your pediatrician recommends them for a specific reason.
+
+### What is the single most useful thing I can do before baby arrives?
+
+Download a tracking app and learn how to use it before you need it at 3am. [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) is free, takes one minute to learn, and will save you so much guessing at those first pediatrician visits.
 
 ---
 

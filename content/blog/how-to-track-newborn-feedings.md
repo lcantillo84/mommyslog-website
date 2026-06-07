@@ -8,6 +8,15 @@ featured: false
 affiliate: false
 image: "https://images.unsplash.com/photo-1758024375456-014f504e88d2?w=1200&h=600&fit=crop&q=80"
 keywords: ["how to track newborn feedings", "newborn feeding log", "baby feeding tracker", "track baby feedings", "newborn feeding schedule tracker", "baby feeding log app"]
+faqs:
+  - question: "How long should I track my newborn's feedings?"
+    answer: "Most parents track closely for the first 2 to 3 months, then naturally stop when feeding patterns are established and they have a gut sense of their baby's rhythm. Use it as long as it feels reassuring and stop when it starts to feel unnecessary — that is the natural signal."
+  - question: "What should I log for each newborn feeding?"
+    answer: "The four essentials are: start time, which side (for breastfeeding) or ounces (for bottle), duration, and diaper output after the feeding. Everything else is optional and rarely matters. Keep it to four data points and you will actually do it consistently."
+  - question: "How often should a newborn eat?"
+    answer: "Newborns typically eat 8 to 12 times in 24 hours in the first few weeks — roughly every 2 to 3 hours around the clock including at night. Fewer than 8 feedings per day consistently is worth discussing with your pediatrician."
+  - question: "What is the easiest app to track newborn feedings?"
+    answer: "Mommy's Log is the simplest option — it logs breastfeeding, bottle, and formula in two taps with no account required. It tracks which side you used last automatically, works offline, and tracks diapers in the same place. Free, no ads, no subscription for core features."
 ---
 
 It's 3am. Your baby just unlatched, milk-drunk and finally, *finally* asleep. You lay them down without breathing. Success.

@@ -248,6 +248,20 @@ Mommy's Log shows "Data Not Collected" because the data never leaves your phone.
 
 ---
 
+## App Comparison at a Glance
+
+| App | Free Tier | Cost | Ads? | Privacy | Platform | Best For |
+|---|---|---|---|---|---|---|
+| **Mommy's Log** | ✅ Full | $0 (Partner Sync $2.99/mo) | ❌ None | On-device | iOS only | Speed + privacy |
+| Huckleberry | ⚠️ Limited | ~$9.99/mo | ❌ None | Cloud | Both | All-in-one tracking |
+| Baby Tracker | ✅ Full (ads) | $4.99 once (no ads) | ⚠️ Yes | Cloud | Both | Android + cross-platform |
+| Glow Baby | ✅ Full (ads) | Premium available | ⚠️ Yes | Cloud | Both | Community + features |
+| Sprout Baby | ✅ Full | $4.99 one-time | ❌ None | Cloud | Both | One-time purchase |
+| Nara Baby | ⚠️ Limited | Varies | ❌ None | Cloud | Both | Modern design |
+| Notes App | ✅ Basic | Free | ❌ None | On-device | Both | Week 1 emergency |
+
+---
+
 ## Final Verdict
 
 For most parents, the answer is **Mommy's Log**: free, fast, private, and it tracks both diapers and feedings so you're not managing two separate apps. Partner Sync means both of you stay in the loop without a shared account.

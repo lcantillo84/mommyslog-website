@@ -8,6 +8,17 @@ featured: false
 affiliate: true
 image: "https://images.unsplash.com/photo-1567201719502-255e0b3c683a?w=1200&h=600&fit=crop&q=80"
 keywords: ["best baby bottles for breastfed babies", "bottles for breastfed baby", "anti colic bottles breastfeeding", "paced bottle feeding", "best bottles for breastfeeding moms", "baby bottle refusing breast"]
+faqs:
+  - question: "What is the best baby bottle for breastfed babies?"
+    answer: "Dr. Brown's Natural Flow is the most widely recommended for breastfed babies — the internal vent reduces gas and the slow-flow nipple makes baby work for milk the same way they do at the breast. For babies actively refusing the bottle, Comotomo's soft silicone body mimics skin and often breaks the refusal cycle."
+  - question: "When should I introduce a bottle to a breastfed baby?"
+    answer: "Most lactation consultants recommend introducing a bottle between 3 and 4 weeks, after breastfeeding is established but before baby develops strong preferences. Waiting past 6 to 8 weeks significantly increases the risk of bottle refusal."
+  - question: "Why is my breastfed baby refusing the bottle?"
+    answer: "Common reasons include being offered the bottle by the breastfeeding parent (baby can smell you and prefers the breast), fast nipple flow that feels different from nursing, and wrong timing. Have someone else offer the bottle when baby is calm and not yet hungry, and warm the nipple under warm water first."
+  - question: "What nipple flow should I use for a breastfed baby?"
+    answer: "Always slow-flow or Level 1, regardless of baby's age. Fast-flow nipples deliver milk too easily, which can make baby prefer the bottle over the breast. Breastfed babies should always work a little for their milk to protect the nursing relationship."
+  - question: "What is paced bottle feeding?"
+    answer: "A technique that mimics breastfeeding by holding the bottle horizontal, pausing every 20 to 30 seconds to let baby re-initiate sucking, and watching for fullness cues. It prevents nipple confusion and keeps breastfeeding appealing by matching the effort and pace of nursing."
 ---
 
 *This post has Amazon affiliate links — I earn a small commission if you buy, at zero extra cost to you.*
