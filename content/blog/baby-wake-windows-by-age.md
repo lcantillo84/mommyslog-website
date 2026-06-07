@@ -133,7 +133,7 @@ For newborns especially, feedings take up a significant portion of the wake wind
 
 This is why tracking both feedings and sleep timing together gives you a complete picture. When you notice baby is always melting down at a certain time of day, looking back at the feeding log and wake time together often reveals the pattern: they were awake 20 minutes too long, or the feeding ran long and compressed their alert time.
 
-[Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) tracks feedings with timestamps so you can see exactly when the last feed ended and calculate when the wake window started. Free, no account, works offline. See how it ranked in our [best baby feeding tracker apps →](/blog/best-baby-feeding-tracker-apps-2025)
+[Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) tracks feedings with timestamps so you can see exactly when the last feed ended and calculate when the wake window started. Free, no account, works offline. See how it ranked in our [best baby feeding tracker apps →](/blog/best-baby-feeding-tracker-apps-2026)
 
 ---
 

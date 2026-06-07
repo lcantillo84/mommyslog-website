@@ -166,7 +166,7 @@ Mommy's Log logs feedings in two taps and shows you your history at a glance —
 
 [Download free on the App Store →](https://apps.apple.com/us/app/mommys-log/id6755473620)
 
-New to breastfeeding? Our [15 Breastfeeding Tips for First-Time Moms →](/blog/breastfeeding-tips-first-time-moms) covers everything from latch to supply. See how Mommy's Log ranked in our [best free baby feeding tracker apps roundup →](/blog/best-baby-feeding-tracker-apps-2025).
+New to breastfeeding? Our [15 Breastfeeding Tips for First-Time Moms →](/blog/breastfeeding-tips-first-time-moms) covers everything from latch to supply. See how Mommy's Log ranked in our [best free baby feeding tracker apps roundup →](/blog/best-baby-feeding-tracker-apps-2026).
 
 ---
 

@@ -108,7 +108,7 @@ It's free. It's private. And it's the reason you'll be able to answer your pedia
 
 [Download Mommy's Log free on the App Store →](https://apps.apple.com/us/app/mommys-log/id6755473620)
 
-Not sure which app to use? We tested 20+ options. See the [7 best free baby feeding tracker apps →](/blog/best-baby-feeding-tracker-apps-2025) to compare.
+Not sure which app to use? We tested 20+ options. See the [7 best free baby feeding tracker apps →](/blog/best-baby-feeding-tracker-apps-2026) to compare.
 
 ---
 

@@ -156,7 +156,7 @@ Get the **[Hatch](https://www.amazon.com/dp/B07MV1HQ2H?tag=mommyslog1-20)** if y
 
 Either way — trust me on this one, hermana. Once you start using white noise you will never look back. 🤍
 
-While you're building sleep routines, [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) helps you track feedings and diapers alongside sleep — so you can spot patterns and walk into your pediatrician's visit with real data. Free, no account, no ads. See the [best free baby feeding tracker apps →](/blog/best-baby-feeding-tracker-apps-2025) for the full breakdown.
+While you're building sleep routines, [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) helps you track feedings and diapers alongside sleep — so you can spot patterns and walk into your pediatrician's visit with real data. Free, no account, no ads. See the [best free baby feeding tracker apps →](/blog/best-baby-feeding-tracker-apps-2026) for the full breakdown.
 
 ---
 

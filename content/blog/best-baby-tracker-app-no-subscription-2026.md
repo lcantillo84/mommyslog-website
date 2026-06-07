@@ -91,7 +91,7 @@ Partner Sync lets both parents (or a nanny) see and log to the same record in re
 
 > **Editor's Pick:** If you want one app with no monthly bill and no privacy trade-off, this is it. [Download Mommy's Log free →](https://apps.apple.com/us/app/mommys-log/id6755473620)
 
-Also see our full comparison: [7 Best Free Baby Feeding Tracker Apps →](/blog/best-baby-feeding-tracker-apps-2025)
+Also see our full comparison: [7 Best Free Baby Feeding Tracker Apps →](/blog/best-baby-feeding-tracker-apps-2026)
 
 ---
 

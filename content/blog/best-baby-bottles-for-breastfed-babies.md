@@ -161,7 +161,7 @@ Start with **[Dr. Brown's](https://amzn.to/421ng6k)**. If baby refuses, move to 
 
 You've got this, hermana. 💛
 
-Once you find the bottle that works — track those feeds in [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620). Free, no account, logs breast and bottle in two taps. See the [best free baby feeding tracker apps →](/blog/best-baby-feeding-tracker-apps-2025) for the full comparison.
+Once you find the bottle that works — track those feeds in [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620). Free, no account, logs breast and bottle in two taps. See the [best free baby feeding tracker apps →](/blog/best-baby-feeding-tracker-apps-2026) for the full comparison.
 
 ---
 

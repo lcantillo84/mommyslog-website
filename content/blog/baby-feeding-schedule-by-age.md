@@ -173,7 +173,7 @@ Logging feedings tells you:
 
 The [newborn weight gain guide →](/blog/newborn-weight-gain-week-by-week) explains exactly how feeding frequency connects to the weight numbers your doctor is watching.
 
-[Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) logs every feeding in two taps — time, duration, side or ounces — and shows your full history at a glance. Free, no account, everything stays on your phone. See how it compares to other options in the [best baby feeding tracker apps →](/blog/best-baby-feeding-tracker-apps-2025).
+[Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) logs every feeding in two taps — time, duration, side or ounces — and shows your full history at a glance. Free, no account, everything stays on your phone. See how it compares to other options in the [best baby feeding tracker apps →](/blog/best-baby-feeding-tracker-apps-2026).
 
 ---
 

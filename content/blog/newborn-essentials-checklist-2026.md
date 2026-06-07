@@ -170,7 +170,7 @@ Download a tracking app and learn how to use it before you need it at 3am. [Momm
 
 That's it, hermana. Real talk, no fluff. Start here and add things as you learn what *your* baby actually needs. You'll figure it out faster than you think — I promise. You've got this. 💛
 
-One more essential that costs nothing: a feeding and diaper tracker. Your pediatrician will ask for those numbers at every visit. [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) is free, takes two taps per entry, and keeps everything private on your phone. See our [best baby feeding tracker apps roundup →](/blog/best-baby-feeding-tracker-apps-2025)
+One more essential that costs nothing: a feeding and diaper tracker. Your pediatrician will ask for those numbers at every visit. [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) is free, takes two taps per entry, and keeps everything private on your phone. See our [best baby feeding tracker apps roundup →](/blog/best-baby-feeding-tracker-apps-2026)
 
 ---
 

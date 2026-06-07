@@ -205,7 +205,7 @@ Your first pediatrician visit is really about three things:
 
 Come prepared, ask your questions, and remember—no question is too small or silly. You're learning, and that's exactly what these visits are for.
 
-One thing that will make every visit easier: a feeding and diaper log. Pediatricians ask for this data every time. Read [how to track newborn feedings →](/blog/how-to-track-newborn-feedings) and use [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) to have the numbers ready — free, two taps per entry, no account needed. See how it ranked in the [best free baby feeding tracker apps →](/blog/best-baby-feeding-tracker-apps-2025).
+One thing that will make every visit easier: a feeding and diaper log. Pediatricians ask for this data every time. Read [how to track newborn feedings →](/blog/how-to-track-newborn-feedings) and use [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) to have the numbers ready — free, two taps per entry, no account needed. See how it ranked in the [best free baby feeding tracker apps →](/blog/best-baby-feeding-tracker-apps-2026).
 
 ---
 

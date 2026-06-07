@@ -118,7 +118,7 @@ Privacy-conscious parents, breastfeeding moms, anyone who hates subscriptions, a
 
 > **Editor's Pick:** Mommy's Log is our top pick for the same reason it wins on feeding tracking — it does the important things fast and privately, without making you pay for the basics. [Download free on the App Store →](https://apps.apple.com/us/app/mommys-log/id6755473620)
 
-It also tracks feedings — [see how it ranked in our feeding tracker roundup →](/blog/best-baby-feeding-tracker-apps-2025)
+It also tracks feedings — [see how it ranked in our feeding tracker roundup →](/blog/best-baby-feeding-tracker-apps-2026)
 
 ---
 

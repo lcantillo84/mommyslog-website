@@ -173,7 +173,7 @@ Don't stress about every diaper—but do pay attention to the overall pattern. A
 
 ## Stop Counting in Your Head — Log It Instead
 
-One tap in [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) logs a wet or dirty diaper with a timestamp. At your next pediatrician visit you'll have the exact numbers — no guessing. Free, no account, everything stays on your phone. See the [full comparison of diaper tracker apps →](/blog/best-baby-diaper-tracker-apps-2026) and [best free baby feeding tracker apps →](/blog/best-baby-feeding-tracker-apps-2025) for the complete picture.
+One tap in [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) logs a wet or dirty diaper with a timestamp. At your next pediatrician visit you'll have the exact numbers — no guessing. Free, no account, everything stays on your phone. See the [full comparison of diaper tracker apps →](/blog/best-baby-diaper-tracker-apps-2026) and [best free baby feeding tracker apps →](/blog/best-baby-feeding-tracker-apps-2026) for the complete picture.
 
 ---
 

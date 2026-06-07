@@ -16,7 +16,7 @@ const categoryColors: Record<string, string> = {
 
 export default function Home() {
   const allPosts = getAllPosts();
-  const pinnedSlug = "best-baby-feeding-tracker-apps-2025";
+  const pinnedSlug = "best-baby-feeding-tracker-apps-2026";
   const pinned = allPosts.find((p) => p.slug === pinnedSlug);
   const others = allPosts.filter((p) => p.slug !== pinnedSlug).slice(0, 2);
   const posts = pinned ? [pinned, ...others] : allPosts.slice(0, 3);

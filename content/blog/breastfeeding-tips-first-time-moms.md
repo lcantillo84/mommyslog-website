@@ -211,7 +211,7 @@ Track your feedings to see patterns, celebrate your progress, and don't hesitate
 
 If you hit a stretch where baby feeds constantly for hours, that's cluster feeding — read our [Cluster Feeding Survival Guide →](/blog/cluster-feeding-survival-guide) so you know exactly what's happening and how to get through it.
 
-And for keeping track without the mental load: [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) logs each feed in two taps, remembers which side you used last, and shows you the pattern — free, no account, no ads. See the [best free baby feeding tracker apps →](/blog/best-baby-feeding-tracker-apps-2025)
+And for keeping track without the mental load: [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) logs each feed in two taps, remembers which side you used last, and shows you the pattern — free, no account, no ads. See the [best free baby feeding tracker apps →](/blog/best-baby-feeding-tracker-apps-2026)
 
 ---
 

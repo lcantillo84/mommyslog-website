@@ -114,7 +114,7 @@ And once your baby is gaining well — it happens fast. That baby who dropped 8%
 
 [Download Mommy's Log free →](https://apps.apple.com/us/app/mommys-log/id6755473620) to start logging from day one.
 
-Also see: [best free baby feeding tracker apps →](/blog/best-baby-feeding-tracker-apps-2025) | [how to track newborn feedings →](/blog/how-to-track-newborn-feedings)
+Also see: [best free baby feeding tracker apps →](/blog/best-baby-feeding-tracker-apps-2026) | [how to track newborn feedings →](/blog/how-to-track-newborn-feedings)
 
 ---
 

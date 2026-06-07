@@ -138,7 +138,7 @@ The pillow doesn't fix a latch problem — it just holds things steady while you
 
 **Keep your phone nearby.** Nursing sessions are when you'll want to log the feeding, catch up on something, or just have water in reach. The My Brest Friend pocket was genuinely designed for this. The Boppy — just make sure there's a flat surface you can reach.
 
-Speaking of logging: if you're still trying to remember which side you used last while managing everything else, [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) does that for you — one tap, no account, free. See how it compares to other trackers in our [best baby feeding tracker apps roundup →](/blog/best-baby-feeding-tracker-apps-2025)
+Speaking of logging: if you're still trying to remember which side you used last while managing everything else, [Mommy's Log](https://apps.apple.com/us/app/mommys-log/id6755473620) does that for you — one tap, no account, free. See how it compares to other trackers in our [best baby feeding tracker apps roundup →](/blog/best-baby-feeding-tracker-apps-2026)
 
 ---
 
