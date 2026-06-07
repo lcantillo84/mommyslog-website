@@ -1,5 +1,5 @@
 ---
-title: "Newborn Essentials: The Only List You Actually Need (2025)"
+title: "Newborn Essentials: The Only List You Actually Need (2026)"
 description: "Every baby registry feels overwhelming. Here's what you actually need — no fluff, no gimmicks, just the stuff that saves your sanity every single day."
 date: "2026-04-22"
 readTime: "7 min read"

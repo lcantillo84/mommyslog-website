@@ -124,7 +124,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   const heroGradient = categoryGradients[post.category ?? ""] ?? "linear-gradient(135deg,#5BA89F 0%,#3d7a72 100%)";
 
   return (
-    <main className="min-h-screen bg-ml-cream">
+    <main className="min-h-screen bg-ml-cream pb-16 sm:pb-0">
       <ReadingProgress />
 
       <Script
@@ -359,6 +359,22 @@ export default async function BlogPostPage({ params }: PageProps) {
             Download the app →
           </a>
         </div>
+      </div>
+
+      {/* Sticky mobile CTA */}
+      <div className="fixed bottom-0 left-0 right-0 z-40 sm:hidden bg-ml-card border-t border-ml-teal/15 px-4 py-3 flex items-center justify-between shadow-[0_-4px_16px_rgba(0,0,0,0.08)]">
+        <div>
+          <p className="text-xs font-bold text-ml-text">Mommy&apos;s Log</p>
+          <p className="text-xs text-ml-secondary">Free to log · No ads</p>
+        </div>
+        <a
+          href="https://apps.apple.com/us/app/mommys-log/id6755473620"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-ml-teal text-white text-xs font-bold px-4 py-2 rounded-xl hover:opacity-90 transition"
+        >
+          Download Free
+        </a>
       </div>
 
       {/* Footer */}
